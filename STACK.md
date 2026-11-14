@@ -180,6 +180,6 @@ failed renders are derived and safe to remove; that is what the 14 Nov tidy did.
 | No Jianying, no `pyJianYingDraft` | the human 10% (花字, sound design) and the draft handover are impossible | a **repo-local** venv on Windows; ask before creating it |
 | Six units longer than a clip | 6.75 s of the 90 s cut has no picture behind it | editorial: re-time those six units, or accept the freeze-fill |
 | No bed, no SFX | everywhere nobody speaks is digital silence (−91 dB) | needs a music/SFX pass; nothing in the repo supplies one |
-| No git repo | every "revert" so far has been a file copy; the 14 Nov tidy is unrecoverable | `git init` + commit the docs and `win/` |
+| ~~No git repo~~ | **resolved 14 Nov** — `git init` + initial commit (93 files: docs, `win/`, `spark/`, `reference/`, text assets). Large media and ffmpeg binaries excluded via `.gitignore` | — |
 | No director agent / no LLM anywhere | prompts, EDL and casting are hand-authored; nothing compiles a beat into a prompt pair | deliberate for ep01 (19 shots, one auteur). A shot compiler is the thing to build before an agent |
 | 苏念 identity | VoiceDesign has no speaker state; vo01/vo03 differ by 37 Hz | `bin/restore.sh qwen3_tts_base_1_7b` (4.54 GB) and clone from vo01 |
