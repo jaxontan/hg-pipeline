@@ -10,6 +10,10 @@ work/.btmp/
 **/__pycache__/
 *.pyc
 
+# Repo-local Python venvs (Rule 0 / Rule 3)
+win/venv*/
+.venv*/
+
 # Large media assets (canonical clips/keyframes/voice are referenced by provenance,
 # not by git; keep the EDL/spec text files)
 work/**/*.mp4
@@ -18,6 +22,10 @@ work/**/*.wav
 work/**/*.jpg
 work/**/*.jpeg
 work/**/*.webm
+
+# Handoff bundle: a copy of files that live canonically under cut/ and vo/.
+# Tracking both would give two sources of truth for assemble_report.json.
+work/*/delivery/
 
 # OS junk
 .DS_Store

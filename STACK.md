@@ -29,7 +29,7 @@ DGX Spark (promaxgb10-a1b2)  ── inference only ─────────�
 | `paramiko` | **5.1.0** | the only third-party Python package this repo needs — SSH/SFTP driver |
 | Blender | **5.2.3 LTS** (`C:\Program Files\Blender Foundation\Blender 5.2`) | sets, props, rigs, guides, keyframe sources |
 | Node.js | 22.23.4 | present, not used by the pipeline |
-| git | 2.56.0.windows.2 | present; the folder is **not** a git repo (no history to recover from) |
+| git | 2.56.0.windows.2 | present; the folder **is** a git repo since 14 Nov (initial commit = docs, `win/`, `spark/`, `reference/`, text assets; media and binaries gitignored) |
 | `ffmpeg` | **N-128889** (13 Nov 2026), repo-local at `win/tools/ffmpeg` | Phase 5: cut, scale, burn captions + regulatory marks, mux. GPL build, so it carries libass and freetype — both are mandatory here |
 
 **Deliberately not installed here:** no ComfyUI, no model weights, no `venv/`, no CUDA. This box
@@ -41,13 +41,16 @@ concatenation run without a venv.
 `win/tools/` by absolute path, so the version that made a master is the version recorded in that
 master's report. Phase 5 no longer needs anything installed system-wide.
 
-**Still missing:** Jianying and `pyJianYingDraft`. The cut can now be conformed to a delivery MP4,
-but the 10% human pass (dynamic 花字, per-line sound design) and the draft handover need them —
-Rule 3 approval, and `pyJianYingDraft` would want its own Windows venv.
+**Still missing: Jianying itself.** `pyJianYingDraft` 0.3.1 now lives in a repo-local venv,
+`win/venv_jianying` (Python 3.12, gitignored) — created under a Rule 3 approval on 14 Nov, and the
+draft in `work/laotang_ep01/jianying_drafts/` was generated with it. What is not installed is the
+Jianying application, so the draft has **not** been opened in the app; `plan.md` §7.5 still asks the
+operator to pin the Jianying version (≤5.8) first. The edit itself (dynamic 花字, per-line sound
+design) remains the human pass.
 
 ---
 
-## 2. Model stack (lives on the Spark, 41.88 GB declared)
+## 2. Model stack (lives on the Spark, 51.52 GB declared / 37.34 GB downloaded)
 
 Generated from `spark/models/MANIFEST.json`; each row carries a sha256, SPDX id and licence URL.
 Licence gate is Rule 2: nothing is downloaded before its row exists.
@@ -177,7 +180,7 @@ failed renders are derived and safe to remove; that is what the 14 Nov tidy did.
 
 | Gap | Effect | Smallest fix |
 |---|---|---|
-| No Jianying, no `pyJianYingDraft` | the human 10% (花字, sound design) and the draft handover are impossible | a **repo-local** venv on Windows; ask before creating it |
+| No Jianying (app) | the 10% human pass (花字, sound design) and opening the draft are impossible | install Jianying, pinned ≤ 5.8 (`plan.md` §7.5). `pyJianYingDraft` itself is **done** — `win/venv_jianying` + `win/build_jianying_draft.py` |
 | Six units longer than a clip | 6.75 s of the 90 s cut has no picture behind it | editorial: re-time those six units, or accept the freeze-fill |
 | No bed, no SFX | everywhere nobody speaks is digital silence (−91 dB) | needs a music/SFX pass; nothing in the repo supplies one |
 | ~~No git repo~~ | **resolved 14 Nov** — `git init` + initial commit (93 files: docs, `win/`, `spark/`, `reference/`, text assets). Large media and ffmpeg binaries excluded via `.gitignore` | — |

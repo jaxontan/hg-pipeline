@@ -20,7 +20,7 @@ Blender process — different machine. Build while it renders.
 
 | File | Size | Role | State |
 |---|---|---|---|
-| `work/sets/huoguo/huoguo_set.blend` | 443,810 B | 火锅店 interior + street strip, **12 rigs**, 366 objects | **FROZEN 13 Nov 00:01**, sha256 `1b9274777296f1ad…` — s009 target 1.00 m, s011 45 mm at 1.38 m, s012 target z 1.25. Do not rebuild while guides are in flight. |
+| `work/sets/huoguo/huoguo_set.blend` | 443,810 B | 火锅店 interior + street strip, **12 rigs**, 366 objects | **FROZEN 13 Nov 00:01**, sha256 `1b9274777296f1ad…` — s009 target 1.00 m, s011 45 mm at 1.38 m, s012 target z **1.25 in the saved set (canonical render uses 2.20 via `retargets.json`)**. Do not rebuild while guides are in flight. |
 | `work/sets/huoguo/huoguo_set_pre_rigs.blend` | 473,074 B | the 8-rig build, copied before that rewrite | **rollback point**, sha256 `9296cc0e…` |
 | `work/characters/lead1_mpfb_bust.blend` | 4.7 MB | 苏念 bust preview, MPFB | **test only** — no turntable, not posed, not the other three leads |
 | `work/ep00_p3_previz/s001_previz.blend` | 130 KB | the original single-shot smoke test | **superseded**, keep as record |
@@ -428,3 +428,46 @@ on it is correct; the linked pot occupies the same space.
 Not verified: the dent reads only as a wobble on the near rim at this distance. If the insert needs
 the dent *legible*, the prop wants another ~8° of yaw and the lamp brought closer — a pose change,
 not a framing one.
+
+---
+
+## Updates — 14 Nov (Round 4)
+
+### `depth_range()` — measured subject, not camera distance
+
+The old formula `far = near + max(1.6·d, 3.2)` sized the ramp from **camera distance**. At `s010`'s 0.73 m the head's own 9.6–10.1 cm of depth mapped to **6 of 255 levels** — a flat white disc, and the ControlNet turned the disc's edge into a hoop/wire/cable. That was never a prompt problem.
+
+Reference implementation: **`win/blender_depth_rerange.py`**. It ray-casts a grid over the frame, groups hits by object-name prefix, measures the subject's real depth span, then
+
+```
+near = z_lo − 0.15·(z_hi − z_lo)
+far  = near + (z_hi − z_lo) / 0.30
+```
+
+Result: the head's own depth now occupies **~76 of 255 levels** (up from 6), on `s009` (ramp 0.583–0.903 m) and `s010` (1.042–1.378 m) alike. Both re-rolled clean on the **first** attempt.
+
+The `0.75·d` / `2.0·d` approximation that `HANDOVER.md` carried is **retired** — it was a guess from before the fix. Use the measured-subject rule instead.
+
+**Caveat — `SUBJSTAT` is mislabelled.** It prints `167` for a 0.30 span-frac, but 167 is the *complement* (gap from `z_hi` to `far`), not the subject's span. The subject spans `(z_hi − z_lo)/(far − near)·255` = 76. Quote **6 → 76** for the head's span; do not use `SUBJSTAT` as a quality gate. Fix next time the script is opened: print both, rename the existing one `FARSTAT`.
+
+### Three placements recorded in `work/sets/huoguo/retargets.json` (never saved the set)
+
+| Shot | New placement | Notes |
+|---|---|---|
+| `s011` | loc (0.30, 3.95, 1.30), target (0.30, 1.23, 1.10), 55 mm | old aim point sat near z ≈ 4 in a 5.5 m tall frame, so a person was unreadable; dropping the aim to z 1.10 put 苏念 and the pot in the lower half. Ramp `builder` 1.636–6.0. |
+| `s012` | loc (1.20, −5.90, 1.60), target (0.90, −3.45, **2.20**), 30 mm | raised from z 2.45; `--hide Bead` (curtain strands are surface, not structure) |
+| `s002d` | loc (1.58, −3.68, 1.00), target (1.08, −4.32, 0.82), 50 mm, `--ramp hug`, `--subject Stall_Pot` | the wall behind won the "largest group" contest; a prop insert needs an explicit subject. Ramp 0.602–1.585. |
+
+Fold these into `SHOTS` the next time the set is legitimately rebuilt — nobody needs a 13th/14th camera today.
+
+### `s012` — no stall, by decision
+
+`s012` still has **no stall**. The beat is carried by the off-screen queue. Recorded as a decision, not a to-do. Do not add a stall to satisfy a checklist.
+
+### `s012` target-z — canonical value
+
+Three values are in circulation: **1.25** in the saved set (and `set_huoguo_cameras.json`), **2.20** in `retargets.json` and the shotlist, and ~2.45 in older notes. **2.20 is the canonical render** (that is what `s012m` / `s012b` were produced from). 1.25 is just what the saved set happens to hold.
+
+### Provenance habit (now automated)
+
+After any render batch: `python win/mirror_provenance.py`, then `bin/doctor.sh`. `doctor.sh` fails on drift until you do — that is the point. See `newsession1.md` §3.1.

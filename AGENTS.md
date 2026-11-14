@@ -12,7 +12,7 @@ There are exactly **two** writable locations in this project.
 | Machine | The only allowed location | Address |
 |---|---|---|
 | DGX Spark (GB10, Ubuntu 24.04 aarch64) | `~/Desktop/AIGC-Model` | `192.168.1.103` |
-| This Windows workstation | `C:\Users\yueju\Desktop\manju` | local |
+| This Windows workstation | `C:\Users\admin\Desktop\manju` | local |
 
 The Spark folder will be **deleted in a single operation** by the operator. Anything written outside it
 becomes an untracked remnant on a machine that is meant to return to pristine. Therefore:

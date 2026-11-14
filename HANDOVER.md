@@ -14,9 +14,12 @@ Written 2026-11-13. Repo root: `C:\Users\admin\Desktop\manju`.
 ## Copy-paste bootstrap for a new conversation
 
 > Read `HANDOVER.md` in `C:\Users\admin\Desktop\manju`, plus `work/sets/huoguo/README.md`.
-> Resume at **Phase 3 (motion)**. Do not rebuild or re-render the set — it is finished and the
-> user may have it open in Blender. Verify the Spark weight download state before submitting a
-> job. Follow the rules in `AGENTS.md`; anything outside the two writable roots is forbidden.
+> Phases 1–5 are DONE to a delivery master (picture, voice, conform, Jianying draft). What is left is
+> judgement, not pipeline: an ear on three voices, a sound pass, and the editorial call on six
+> freeze-filled units. See `newsession1.md` §11 and §7. Do not rebuild or re-render the set — it is
+> finished and the user may have it open in Blender. Do not re-render a clip or a voice line without
+> reading `newsession1.md` first. Follow the rules in `AGENTS.md`; anything outside the two writable
+> roots is forbidden.
 
 ---
 
@@ -25,16 +28,16 @@ Written 2026-11-13. Repo root: `C:\Users\admin\Desktop\manju`.
 | Phase | Name | Status |
 |---|---|---|
 | 1 | Blender white-model set (8 cameras + alley + 4 CU rigs) | **DONE** |
-| 2 | Keyframes via depth-ControlNet on the Spark | **DONE** — 19 of 19 exist; `s010`/`s011` rejected pending rig fixes |
-| 3 | Motion — Wan 2.2 TI2V-5B clips | **14 of 19 units rendered**, furniture held on every one |
-| 4 | Voice / TTS + lip-sync | not started (no weights yet) |
-| 5 | Assembly → Jianying draft (Windows only) | not started |
+| 2 | Keyframes via depth-ControlNet on the Spark | **DONE** — 19 of 19 exist; `s010`/`s011` re-rolled 14 Nov (`s010c` 00036, `s011c` 00039) |
+| 3 | Motion — Wan 2.2 TI2V-5B clips | **DONE 14 Nov 02:05 — 19 of 19 units, 18 canonical files** (s001m serves units 3 and 10) |
+| 4 | Voice / TTS | **DONE 14 Nov** — 6 utterances, measured, casting defects recorded (see "Phase 4 — Voice" below, and `newsession1.md` §6) |
+| 5 | Assembly → Jianying draft (Windows only) | **DONE 14 Nov** — conform master (90.00 s) + Jianying draft in `work/laotang_ep01/jianying_drafts/laotang_ep01/`; Jianying is not installed here, so the draft has not been opened in the app yet |
 | 6 | Characters (replace mannequins) | blocked: LoRA trainer not approved |
 | 7 | Wipe / restore hygiene | ongoing, currently clean |
 
-**Blender work still outstanding is itemised in `nextblender.md`** — the posed-VACE guides, the two
-CU re-rigs, the `s002d` stall insert, four character turntables and the mask/ID pass. Read that file
-when the task is "build something in Blender"; this file stays the state of the pipeline.
+**Blender work still outstanding is itemised in `nextblender.md`** — the CU re-rigs and the `s002d`
+insert are done (14 Nov); what remains is the character pass (blocked, Rule 3) and the mask/ID pass.
+Read that file when the task is "build something in Blender"; this file stays the state of the pipeline.
 
 ---
 
@@ -103,7 +106,11 @@ when the task is "build something in Blender"; this file stays the state of the 
     `near…near+max(1.6·d, 3.2)`, which is right for a wide and wrong for anything under ~1.5 m: at
     0.73 m the face sits at 0.85–0.92 and has no gradient to guide on, so the model invents rings and
     wires around the head. `DEPTHSTAT std` passes anyway, because a white blob on a black background
-    is high contrast. Tighten to `near ≈ 0.75·d`, `far ≈ 2.0·d` for CUs.
+    is high contrast. **Retired 14 Nov** — the `0.75·d`/`2.0·d` guess is superseded by the
+    measured-subject rule in `win/blender_depth_rerange.py`: ray-cast the subject's real depth span,
+    then `near = z_lo − 0.15·(z_hi − z_lo)`, `far = near + (z_hi − z_lo)/0.30`. This puts ~76 of
+    255 levels on the subject (vs 6 before). See `newsession1.md` §4.1 and gotcha 11 there for the
+    `SUBJSTAT` label caveat (it prints the complement, 167, not the span).
 12. **Check `GET /jobs` before submitting.** Two sessions rendered the alley twice on 13 Nov
     (`x001`–`x003` as 00021/00024/00025 *and* 00026–00028) because neither knew the other had
     submitted. `work/.btmp/listjobs.py` lists the last jobs with shot id, status and output hash.
@@ -239,7 +246,7 @@ All eight honoured the depth layout. That is Phase 2's pass criterion, and it pa
 
 ---
 
-## Phase 3 — Motion (IN PROGRESS — resume here)
+## Phase 3 — Motion (DONE 14 Nov 02:05)
 
 **Goal:** prove the room stays consistent while the camera moves, then decide 5B vs A14B.
 
@@ -365,9 +372,11 @@ and 0.92 on an 8-bit ramp — a flat white blob. The background is the only thin
 the model, faced with a featureless blob, invents a ring, a hoop or a wire around the face. It did
 that twice, in two different prompts, which is what makes it a rig defect rather than bad luck.
 
-Rule to add to `depth_range()`: **the ramp has to hug the subject**, `near ≈ 0.75·d`, `far ≈ 2.0·d`,
-for any rig closer than ~1.5 m. Wide rigs are fine with the existing formula because their
-background is the point; a close-up's background is four pixels of blur.
+Rule to add to `depth_range()` (**superseded 14 Nov** — see `win/blender_depth_rerange.py` and
+`newsession1.md` §4.1 for the measured-subject rule): the old guess was `near ≈ 0.75·d`,
+`far ≈ 2.0·d` for rigs under ~1.5 m. The correct version ray-casts the subject's real depth span and
+sets `near = z_lo − 0.15·(z_hi − z_lo)`, `far = near + (z_hi − z_lo)/0.30`, which puts ~76 of 255
+levels on the subject instead of 6. Wide rigs keep the existing formula.
 
 `DEPTHSTAT std` does not catch this — a flat white subject against a black background has a healthy
 standard deviation. The check that would catch it is *the spread of values inside the subject's
@@ -501,25 +510,25 @@ python win\batch_clips.py                    # 7 clips, ~7 min each
 python win\batch_clips.py --only s004em      # a single re-roll
 ```
 
-### Next actions — picture, 14 Nov
+### Next actions — picture, 14 Nov (all completed 14 Nov)
 
-1. **Fix the two CU depth ramps** (`s009`, `s010`): re-render their depth passes with
-   `near ≈ 0.75·d`, `far ≈ 2.0·d`, rebuild the control passes, then re-roll `s010` and, if the face
-   still drifts, `s009b`. `win/blender_pose_s002c.py` already does everything except take the ramp as
-   arguments — generalise it rather than hand-editing the set.
-2. **Re-rig `s011`** — 3.07 m back with a 35 mm lens puts a person at 1/6 frame height, and the model
-   answered by inventing a laboratory still. Move to ≈1.6 m and 50–65 mm, keep the hatch in the
-   foreground, re-render, re-roll.
-3. **`s012`**: retarget z from 2.45 m to ≈1.30 m. If the beat needs her stall in frame, that is a
-   build; otherwise it ships as a shop-front insert.
-4. **`s002d`** needs a stall-side low rig that does not exist yet — the copper pot on the folding
-   table, dent catching the lamp. Build it, keyframe (prompt carries the *copper*, not the yuanyang
-   pot), then clip.
-5. **Then five clips**: `s009b`, `s010`, `s011`, `s012`, `s002d` — about 35 min of GPU, and the
-   picture is complete at 19 units / 90 s.
+1. **Fix the two CU depth ramps** (`s009`, `s010`): **done** — `win/blender_depth_rerange.py`
+   (measured subject, 6 → 76 levels); both re-rolled clean on the first attempt (`s009c` 00037,
+   `s010c` 00036). `s011`/`s012`/`s002d` re-rigged via `win/blender_retarget_rig.py`.
+2. **Re-rig `s011`** — **done** via `win/blender_retarget_rig.py --loc 0.30,3.95,1.30 --target
+   0.30,1.23,1.10 --lens 55`. The failure mode was real: 3.07 m back at 35 mm put a person at 1/6
+   frame height and the model invented a laboratory still. Clip `00017`.
+3. **`s012`** — **done** at target z **2.20** (not 1.25, which is only what the saved set holds; not
+   2.45). `--hide Bead`. Clip `00019`. **No stall, by decision** — the beat is carried by the
+   off-screen queue; do not add one to satisfy a checklist.
+4. **`s002d`** — **done**: stall-side low rig, `--ramp hug --subject Stall_Pot` (the wall behind won
+   the "largest group" contest). Clip `00018`.
+5. **Then five clips** — **rendered 14 Nov 01:05–02:05**, 2030 s of clip time (~410 s per 5 s clip):
+   `s009m` 00015, `s010m` 00016, `s011m` 00017, `s002d` 00018, `s012m` 00019. Picture complete at
+   19 units / 90 s, 18 canonical files.
 
 Do not start a re-roll without checking `GET /jobs` first (gotcha 12) — the Blender agent submits to
-the same gateway.
+the same gateway. This still applies; "done" is not "frozen".
 
 ### Pass/fail criterion
 
@@ -530,17 +539,62 @@ whether to raise the memory cap for A14B or stay on 5B.
 
 ---
 
-## Phase 4 — Voice (not started)
+## Phase 4 — Voice (DONE 14 Nov)
 
-Plan: Qwen3-TTS VoiceDesign → Base, then InfiniteTalk / Wan2.2-S2V + LatentSync for lip-sync.
-Nothing downloaded, nothing in `MANIFEST.json`. First action is a licence check and manifest entry
-**before** any download (AGENTS Rule 2). Do not start this before Phase 3 reports.
+Qwen3-TTS VoiceDesign rendered all six utterances of the episode; `qwen3_tts_base_1_7b`
+(cloning) and `latentsync_1_6` (lip-sync) are **declared in `MANIFEST.json` but not downloaded** —
+nothing in ep01 needs either. Full record: `newsession1.md` §6.
 
-## Phase 5 — Assembly (not started)
+| Piece | State |
+|---|---|
+| `qwen3_tts_voicedesign_1_7b` 4.52 GB, `faster_whisper_small` 486 MB | downloaded, Apache-2.0 / MIT, rows gated in `MANIFEST.json` |
+| `app/venv-tts` | Python 3.12.3, torch 2.14.1+cu130, qwen-tts 0.1.1, sox, torchaudio 2.11.1+cu130 (the only build that exists) |
+| render | `spark/app/tts/render_lines.py` ← `win/tts_lines.py`; 6 wavs in `work/laotang_ep01/vo/`, 24 kHz mono PCM_16, −19…−26 dBFS |
+| measure | `app/tts/measure_lines.py` → `vo/MEASURE.json`; ASR ≤1 character of error per line, all homophones |
+| casting fixes | vo03 279→208 Hz, vo05 217→174 Hz (share 苏念's seed/preset); vo06 59→75 Hz |
 
-`pyJianYingDraft` runs **on Windows only** (AGENTS Rule 4) because Jianying drafts embed absolute
-media paths; a Linux-path draft is a broken deliverable. Global masters must refuse to assemble if
-they contain `territory: cn` shots (Rule 5).
+**What is left is an ear, not a pipeline.** Play `work/laotang_ep01/vo/audition_all.wav` (17.40 s,
+vo01→vo06). 顾衍 at 75 Hz is intelligible but low for a man of thirty — 85 Hz cost 5/9 ASR
+characters, so it is not worth iterating blind. 苏念's vo03 sits 37 Hz above vo01 (a register
+shift, accepted); exact identity needs cloning from vo01 with `qwen3_tts_base_1_7b`, not more
+prompt tuning. 苏建国's 沙哑/方言 is not measurable at all.
+
+**Lip-sync is optional, not next by default** — only units 17 and 19 are sustained face-on
+dialogue, and 苏念 has no face in ep01.
+
+## Phase 5 — Assembly (DONE 14 Nov — draft delivered, unverified in Jianying)
+
+`win/assemble.py` + repo-local `win/tools/ffmpeg` already produced the first delivery master:
+`work/laotang_ep01/cut/laotang_ep01_conform.mp4` — 90.00 s, 1080×1920, 24 fps, 2160 frames,
+40.6 MB, with captions, 片头 title block and per-episode AI label burned in. ffmpeg is repo-local
+(not installed, PATH untouched) and must be GPL-family (libass/freetype/fribidi load-bearing).
+
+The assembler refuses (rules, not warnings): no clip without provenance (19/19 joined by shot_id +
+recorded output filename), no global master containing a restricted-territory unit, no `--final`
+while `compliance.program_number` is empty, and no silent duration drift (encoded picture must match
+the cut within 0.25 s). Two open decisions, both creative: (a) six units are longer than a 5.04 s
+clip (2, 4, 10, 12, 17, 18 — 6.75 s short total, 12.54 s headroom elsewhere) — `--allow-hold`
+freeze-fills the tail, or re-time the cut; (b) no bed/SFX, so non-speech measures −91 dB (digital
+silence) — the shotlist's SFX column has no assets behind it.
+
+**Done 14 Nov:** repo-local venv created at `win/venv_jianying` (Python 3.12, pyJianYingDraft 0.3.1,
+recorded as a Rule 3 approval; the venv is gitignored). Draft generated by
+`win/build_jianying_draft.py` at `work/laotang_ep01/jianying_drafts/laotang_ep01/` — picture track =
+the conform master, six VO wavs at their slot starts, SRT captions imported. Verified in the JSON:
+3 tracks, 90.0 s, 1 video + 6 audio materials, and **every media path absolute and local**
+(`C:\Users\admin\Desktop\manju\work\laotang_ep01\…`), which is the Rule 4 requirement.
+
+| Path | What it is |
+|---|---|
+| `work/laotang_ep01/cut/laotang_ep01_conform.mp4` | **canonical** master — the draft references this one |
+| `work/laotang_ep01/cut/assemble_report.json` | durations, holds, ffmpeg build, `final: false` |
+| `work/laotang_ep01/delivery/` | a second copy of the master plus `laotang_ep01.srt`, `VO_MANIFEST.json`, `assemble_report.json` — **gitignored**, derived from `cut/` + `vo/`, never a source of truth |
+
+**Two things the draft cannot prove on its own.** (1) **Jianying is not installed on this
+machine**, so the draft has never been opened — validity is checked at the JSON level only, and
+`plan.md` §7.5 still asks the operator to pin the Jianying version (≤5.8) before trusting the
+generator. (2) The freeze-fills are baked into the picture track, so changing them means re-running
+`win/assemble.py` and rebuilding the draft, not editing inside Jianying.
 
 ## Phase 6 — Characters (blocked)
 
@@ -552,7 +606,9 @@ anything. Replacing mannequins needs no rework of the set or the rigs.
 ## Phase 7 — Wipe / restore hygiene (ongoing)
 
 - `bin/doctor.sh` must print **BOUNDARY CLEAN** before any "done" report. Last run: clean.
-- `spark/models/MANIFEST.json` — 7 weights, all Apache-2.0, 32.33 GB total.
+- `spark/models/MANIFEST.json` — **11 rows, 51.52 GB declared, 37.34 GB downloaded**; 9 Apache-2.0,
+  1 MIT (`faster_whisper_small`), 1 OpenRAIL++ (`latentsync_1_6`). Declared only:
+  `qwen3_tts_base_1_7b` (4.54 GB, cloning) and `latentsync_1_6` (9.64 GB, lip-sync).
 - Any system install goes through `bin/record-install.sh` with a receipt in `app/os/installed.tsv`.
 - `bin/restore.sh` rebuilds the folder from the manifest after a wipe; it is also the resume tool
   for interrupted downloads.
@@ -575,10 +631,14 @@ anything. Replacing mannequins needs no rework of the set or the rigs.
 
 | Blocker | Smallest unblock |
 |---|---|
-| umt5 + VAE still downloading | wait, or re-run `bin/restore.sh` (skips verified) |
-| A14B can't fit 44 G | operator decision to raise `COMFY_MEMORY_MAX` |
+| **No bed, no SFX** — non-speech measures −91 dB | a licensed ambience/SFX pass (music + pot crash, rain, bead curtain, market), each with provenance |
+| **Six units freeze-filled** (2, 4, 10, 12, 17, 18 — 6.75 s total) | editorial call: accept the holds, or re-time the cut and re-run `win/assemble.py` |
+| **Draft unverified in Jianying** (not installed here) | operator opens it; pin Jianying ≤5.8 per `plan.md` §7.5 |
+| `--final` refused while `compliance.program_number` is empty | the number comes from platform review; inventing one is a fake regulatory mark |
+| 顾衍 voice is 75 Hz — intelligible, low for a man of 30 | an ear decides; cloning, not more prompt tuning (85 Hz cost 5/9 ASR characters) |
+| A14B can't fit 44 G | operator decision to raise `COMFY_MEMORY_MAX` (not needed — picture is done on 5B) |
 | Character LoRA trainer not approved | operator approval, then manifest + record-install |
-| Kandinsky 6.0 Pro needs a 20 KB ComfyUI core patch | operator approval |
+| Kandinsky 6.0 Pro needs a 20 KB ComfyUI core patch | operator approval (not on the ep01 path) |
 | SSH key auth not installed (`~/.ssh` is outside the boundary) | operator exception for `~/.ssh` |
 
 ---
@@ -588,27 +648,31 @@ anything. Replacing mannequins needs no rework of the set or the rigs.
 Paste the one that matches where you are. Each is written to be the *entire* first message of a new
 conversation — no other context needed.
 
-**Resuming Phase 3 (motion) — the current one**
+**Resuming Phase 5 (assembly) — the current one**
 
-> Read `C:\Users\admin\Desktop\manju\HANDOVER.md`, section "Phase 3 — Motion", and
-> `win/submit_keyframe.py`. The set and the 8 keyframes are finished — do not rebuild or re-render
-> anything. Check whether `bin/restore.sh` finished on the Spark (verify files, not exit codes),
-> then write `win/submit_clip.py` and run the first Wan 2.2 TI2V-5B clip from
-> `work/laotang_ep01/s001c_manju_keyframe_00004_.png`. Report whether the furniture holds across
-> frames.
+> Read `C:\Users\admin\Desktop\manju\HANDOVER.md`, section "Phase 5 — Assembly", and
+> `C:\Users\admin\Desktop\manju\newsession1.md` §11 and §7. Phases 1–5 are done: the 90 s conform
+> master is at `work/laotang_ep01/cut/laotang_ep01_conform.mp4` and the Jianying draft at
+> `work/laotang_ep01/jianying_drafts/laotang_ep01/`. Do not re-render clips or voice. The three open
+> decisions are listed in §7 of `newsession1.md` — a sound/SFX pass, the six freeze-filled units, and
+> whether the draft opens in Jianying (not installed here). Ask which of the three to take before
+> touching anything.
 
-**Resuming Phase 4 (voice)**
+**Resuming Phase 3 (motion) — historical, do not re-run**
 
-> Read `C:\Users\admin\Desktop\manju\HANDOVER.md`, sections "Machine facts" and "Phase 4 — Voice".
-> Nothing for voice is downloaded yet. First do the licence check and add entries to
-> `spark/models/MANIFEST.json`; do not download before the manifest entry exists. Then propose the
-> TTS workflow for Qwen3-TTS VoiceDesign → Base.
+> Read `C:\Users\admin\Desktop\manju\HANDOVER.md`, section "Phase 3 — Motion". This phase is
+> **complete** — 19 of 19 units, 18 canonical clips. Read it only to understand how a clip was made;
+> do not submit a clip. If a re-roll is genuinely needed, check `GET /jobs` first (gotcha 12) and
+> read `newsession1.md` §4.1 on the depth ramp before re-rendering any guide.
 
-**Resuming Phase 5 (assembly)**
+**Resuming Phase 4 (voice) — historical, only the ear remains**
 
-> Read `C:\Users\admin\Desktop\manju\HANDOVER.md`, section "Phase 5 — Assembly". Clips live in
-> `work/laotang_ep01/`. Build a pyJianYingDraft draft on this Windows machine only, with absolute
-> local media paths, and refuse to include any `territory: cn` shot in a global master.
+> Read `C:\Users\admin\Desktop\manju\HANDOVER.md`, section "Phase 4 — Voice", and
+> `newsession1.md` §6.5.1–§6.5.2. Weights are downloaded and six wavs are rendered and measured;
+> do not re-render unless a line sounds wrong. What is left is judgement: play
+> `work/laotang_ep01/vo/audition_all.wav` and decide on 顾衍 (75 Hz), 苏念's two registers, and
+> 苏建国's 沙哑/方言. To change one line: edit its `instruct` in
+> `work/story/vo_lines_laotang_ep01.json`, then `python win\tts_lines.py --only voNN --overwrite`.
 
 **Resuming Phase 6 (characters)**
 
@@ -629,8 +693,8 @@ conversation — no other context needed.
 1. Read this file and `work/sets/huoguo/README.md`. Nothing else, unless a phase says so.
 2. Never dump image files unless the user asks to see one — each one is a large, expensive token
    block. Check dimensions/statistics with a script instead.
-3. Read `win/submit_keyframe.py` before writing `win/submit_clip.py`; it is the canonical pattern
-   for submit → poll → pull → verify.
+3. Read `win/submit_keyframe.py` or `win/submit_clip.py` before writing another driver; they are the
+   canonical pattern for submit → poll → pull → verify.
 4. Prefer running one probe script over a chain of shell one-liners; the quoting rules above make
    long SSH one-liners fail more often than they succeed.
 5. When a phase finishes, **update this file** — replace the status in the phase map and append what
