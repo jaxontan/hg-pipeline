@@ -422,7 +422,7 @@ entries, because `--overwrite` appends without deleting — that is how vo05 rea
 
 `win/assemble.py` + `win/tools/ffmpeg` produce a delivery master from an EDL. The first one is
 `work/laotang_ep01/cut/laotang_ep01_conform.mp4`: **90.00 s, 1080×1920, 24 fps, 2160 frames,
-40.6 MB**, with captions, the 片头 title block and the per-episode AI label burned in.
+41.7 MB**, with captions, the 片头 title block and the per-episode AI label burned in.
 
 **ffmpeg is repo-local, not installed.** `win/get_ffmpeg.sh` fetches a static build into
 `win/tools/ffmpeg`; nothing touches PATH, Program Files or the registry, so Rule 0 holds and the
@@ -453,11 +453,13 @@ libass (captions) and freetype/fribidi (drawtext, the Art.27 marks) are both loa
 
 **Two things the conform does not fix, because they are decisions:**
 
-- **Six units are longer than a clip** — 2, 4, 10, 12, 17, 18 need 5.50/5.50/7.00/6.00/7.00/6.00 s
-  from a 5.04 s clip, 6.75 s short in total, against 12.54 s of headroom in the other thirteen.
-  `--allow-hold` freeze-fills the tail (that is what the current file does, and the report lists
-  exactly which units were frozen and for how long). The alternative is re-timing the cut. The
-  shotlist says "no unit needs to be longer than 5 s" — the table disagrees with itself.
+- **Units longer than a clip — resolved for four of six on 14 Nov.** Units 2, 4, 10, 12, 17, 18 each
+  asked for more than the 121 frames (5.0417 s) a clip holds — 6.75 s short in total against 12.54 s of
+  headroom in the other thirteen. Units 2, 4, 12 and 18 were cut back to their live 121 frames and the
+  freed time given to the following unit (§11.3); **units 10 and 17 still hold 1.958 s each** (3.92 s
+  total). Their neighbours are at 120/121 frames, so a re-time there needs a VACE continuation or a
+  shorter episode. The shotlist says "no unit needs to be longer than 5 s" — the table disagreed with
+  itself, and this is where that showed.
 - **No bed, no SFX.** Everywhere nobody speaks the master measures −91 dB: digital silence. The
   shotlist's audio column (pot crash, rain, curtain beads, market ambience) has no assets behind it.
 
@@ -603,6 +605,13 @@ it** — a `cp` there once failed silently and a drift test appended to the live
 18. **Verify the delivery, not the build log.** `python win\verify_delivery.py` is the only thing that
     checks the master, captions, wavs and draft against each other; the assembler's own report cannot
     see a 3 dB error or a mis-timed caption. Run it after any re-assembly (§11.6).
+19. **Count frames, not seconds, when conforming.** A clip is 121 frames = 5.0417 s, so "5.5 s" is not a
+    length any clip has. `assemble.py` used to compare `have - need` in seconds and hand `trim=duration=`
+    a `%.3f` value; whether a unit got 83 or 84 frames came down to which side of a rounding edge the
+    decimal fell on, and one frame of drift per unit is invisible in a 90 s file. It now rounds each unit
+    to whole frames, trims 1 ms inside the last wanted frame, and reports slack as `+38fr`. The four
+    holds went away by moving cut points (§11.3), not by this — this just stops the conform from
+    deciding frame counts by luck.
 
 ---
 
@@ -628,8 +637,8 @@ it** — a `cp` there once failed silently and a drift test appended to the live
    `app/venv-tts/bin/python app/tts/measure_lines.py --episode laotang_ep01` (≈40 s, ASR on CPU).
 6. ~~Only then assembly.~~ **Done 14 Nov** — `win/assemble.py` produced the 90 s conform, and
    `win/build_jianying_draft.py` (repo-local `win/venv_jianying`) produced the draft. See §11. The
-   remaining assembly work is a **sound pass** and the **six freeze-filled units**, both decisions in
-   §7 — not code.
+   remaining assembly work is a **sound pass** and the **two freeze-filled units** (10, 17), both
+   decisions in §7 — not code.
 
 ---
 
@@ -645,8 +654,8 @@ load-bearing) → `work/laotang_ep01/cut/laotang_ep01_conform.mp4`:
 | | |
 |---|---|
 | duration | **90.00 s** (2160 frames @ 24 fps), picture and container agree |
-| size | **40.6 MB**, 1080×1920 |
-| sha256 | **`35966a48…`** — rebuilt 14 Nov after the −3 dB audio fix (§11.5); the pre-fix master was `ffcffcb2…` |
+| size | **41.7 MB**, 1080×1920 |
+| sha256 | **`8710fdc0…`** — final encode, 14 Nov (after the −3 dB audio fix and the four re-timed units). Earlier: `35966a48…` pre-retime, `ffcffcb2…` pre-audio-fix |
 | audio | 48 kHz stereo AAC 192k; peak **−3.7 dBFS**, mean −29.4 dBFS (see §11.5) |
 | burned in | captions (SRT), 片头 title block, per-episode AI label |
 | provenance join | 19/19 units matched via `shot_id` + the *recorded* output filename (not the on-disk name) |
@@ -667,21 +676,39 @@ more than 0.25 s from the cut.
    multiplied by 6.67: `MarginV=120` put captions 800 px up the frame. `Fontsize=12` (~80 px) and
    `MarginV=20` (~133 px) is where a vertical drama wants them.
 
-### 11.3 Holds — 6.75 s of held frame, applied
+### 11.3 Holds — 6.75 s down to 3.92 s, by moving four cut points
 
-Six units need more than the 5.04 s a clip holds. `--allow-hold` freeze-fills the tail:
+Six units asked for more than the 121 frames (5.0417 s) a clip holds. `--allow-hold` freeze-fills the
+tail, but every one of the six tails still had real motion (21–39 dB between frames 0.25 s apart), and
+**all six held frames contain steam** — the one thing a viewer reads instantly as a still. So the
+operator re-timed four of them on 14 Nov.
 
-| Unit | Shot | Frozen |
-|---|---|---|
-| 2 | `s011m` | 0.458 s |
-| 4 | `s003m` | 0.458 s |
-| 10 | `s001m` | 1.958 s |
-| 12 | `x002` | 0.958 s |
-| 17 | `s009m` | 1.958 s |
-| 18 | `s002d` | 0.958 s |
+The mechanism: each held unit is cut back to its live 121 frames and the freed time is given to the
+**following** unit, which has unused footage. Only that one cut point moves; the episode stays 90.00 s
+and no caption or VO time changes.
 
-**This is the ep01 creative call still open** (§7): accept the holds, or re-time the cut so those six
-units fit inside 5.04 s. Re-timing means re-running `win/assemble.py` and rebuilding the draft.
+| Unit | Shot | was | now | following unit |
+|---|---|---|---|---|
+| 2 | `s011m` | 132 fr, 0.458 s frozen | **121 fr** | 3 → 83 fr (3.46 s) |
+| 4 | `s003m` | 132 fr, 0.458 s frozen | **121 fr** | 5 → 95 fr (3.96 s) |
+| 10 | `s001m` | 168 fr, **1.958 s frozen** | 168 fr | — none available |
+| 12 | `x002` | 144 fr, 0.958 s frozen | **121 fr** | 13 → 119 fr (4.96 s) |
+| 17 | `s009m` | 168 fr, **1.958 s frozen** | 168 fr | — none available |
+| 18 | `s002d` | 144 fr, 0.958 s frozen | **121 fr** | 19 → 71 fr (2.96 s) |
+
+**3.92 s of held frame remains: units 10 and 17, 47 frames each.** Their neighbours (9, 11, 16) sit at
+120 of 121 frames, so there is nothing to borrow — the proper fix is a VACE continuation on the Spark
+(Wan 2.2 VACE is in the stack for exactly this), or a shorter episode. Until then the holds stand.
+`assemble_report.json` now records `frozen_frames` alongside `frozen_seconds`.
+
+Re-timing means re-running `win/assemble.py` and rebuilding the draft; the four new cut points were
+verified against their source clips (32–33 dB to the incoming shot, 9–12 dB to the outgoing one).
+
+**The re-time and the frame counting are two separate fixes.** The holds existed because six units were
+genuinely longer than 121 frames — no arithmetic could have made them fit. What the arithmetic *did* get
+wrong was the other side of it: `assemble.py` measured unit lengths in seconds and let `trim=duration=`
+round, so whether a unit came out 83 or 84 frames depended on a decimal. It now counts frames first and
+trims 1 ms inside the last wanted frame — see gotcha 19.
 
 ### 11.4 The draft
 
@@ -712,7 +739,8 @@ level §6.5.1 measured: peak −6.7 dBFS, mean −32.4 dBFS.
 
 The fix is `pan=stereo|c0=c0|c1=c0` — copy, not spread. The rebuilt master is **exact** against
 `MEASURE.json` on all six lines (−19.0, −25.7, −21.0, −20.5, −20.1, −22.2 dBFS), with peak **−3.7 dBFS**,
-mean −29.4 dBFS, still 90.00 s and 40.6 MB. Master sha256 **`35966a48…`** (the old one was `ffcffcb2…`).
+mean −29.4 dBFS, still 90.00 s (41.7 MB in the final encode). Master sha256 **`35966a48…`** at that
+point — the pre-fix master was `ffcffcb2…`; the current one is `8710fdc0…` after the §11.3 re-time.
 The draft was rebuilt against it: same path, so nothing else in the draft changed.
 
 Two lessons, both now in the checks: a level error is inaudible as a *defect* (it sounds like a quiet
@@ -747,14 +775,14 @@ Two warnings are real and deliberately left alone:
   inside unit 13.
 
 A check earns its place by failing: the level check is what found the −3 dB, and the PSNR pairs
-separate 57–65 dB (frozen) from 12–31 dB (live) across the same six units.
+separate 57.2 / 58.9 dB (frozen) from 24.1 / 12.8 dB (live control) on the two remaining holds.
 
 ### 11.7 What is left for ep01
 
 | Item | Kind | Next action |
 |---|---|---|
 | **No bed, no SFX** — non-speech is −91 dB | asset work | licensed ambience/music/SFX + provenance; the shotlist's audio column (pot crash, rain, beads, market) has no files behind it |
-| **Six freeze-fills** (11.3) | editorial | accept, or re-time the cut |
+| **Two freeze-fills** (units 10, 17 — 1.958 s each) | editorial / GPU | VACE continuation on the Spark, or cut those two units and accept an 86.08 s episode |
 | **Draft unopened** | verification | install Jianying (≤5.8), open the draft, check media online |
 | `--final` refused | platform gate | `compliance.program_number` after 确权 review |
 | 顾衍 75 Hz / 苏念 registers / 苏建国 沙哑 | judgement | an ear on `audition_all.wav`; cloning (`qwen3_tts_base_1_7b`, not downloaded) is the only further lever |

@@ -78,9 +78,9 @@
                 "duration": 3120000,
                 "effect_id": "",
                 "formula_id": "",
-                "id": "c4bb048dfe5541ba9ffc6f89f3bbe992",
-                "local_material_id": "c4bb048dfe5541ba9ffc6f89f3bbe992",
-                "music_id": "c4bb048dfe5541ba9ffc6f89f3bbe992",
+                "id": "72f8a70e086e4ad98ba3ffafb515fe8a",
+                "local_material_id": "72f8a70e086e4ad98ba3ffafb515fe8a",
+                "music_id": "72f8a70e086e4ad98ba3ffafb515fe8a",
                 "name": "vo01_sunian_vo.wav",
                 "path": "C:\\Users\\admin\\Desktop\\manju\\work\\laotang_ep01\\vo\\vo01_sunian_vo.wav",
                 "source_platform": 0,
@@ -96,9 +96,9 @@
                 "duration": 4400000,
                 "effect_id": "",
                 "formula_id": "",
-                "id": "19a4a62d50164fe894724666bdd7d1e2",
-                "local_material_id": "19a4a62d50164fe894724666bdd7d1e2",
-                "music_id": "19a4a62d50164fe894724666bdd7d1e2",
+                "id": "5a53d7177a864649b68fa4f7175b7d20",
+                "local_material_id": "5a53d7177a864649b68fa4f7175b7d20",
+                "music_id": "5a53d7177a864649b68fa4f7175b7d20",
                 "name": "vo02_sujianguo.wav",
                 "path": "C:\\Users\\admin\\Desktop\\manju\\work\\laotang_ep01\\vo\\vo02_sujianguo.wav",
                 "source_platform": 0,
@@ -114,9 +114,9 @@
                 "duration": 1920000,
                 "effect_id": "",
                 "formula_id": "",
-                "id": "058a15c78a25445fad4f22f1829c0f49",
-                "local_material_id": "058a15c78a25445fad4f22f1829c0f49",
-                "music_id": "058a15c78a25445fad4f22f1829c0f49",
+                "id": "dd42fcd7842c45a59a525d3f386c9892",
+                "local_material_id": "dd42fcd7842c45a59a525d3f386c9892",
+                "music_id": "dd42fcd7842c45a59a525d3f386c9892",
                 "name": "vo03_sunian_line.wav",
                 "path": "C:\\Users\\admin\\Desktop\\manju\\work\\laotang_ep01\\vo\\vo03_sunian_line.wav",
                 "source_platform": 0,
@@ -132,9 +132,9 @@
                 "duration": 1520000,
                 "effect_id": "",
                 "formula_id": "",
-                "id": "0b267f2ff57c446993ca1bef6c671af8",
-                "local_material_id": "0b267f2ff57c446993ca1bef6c671af8",
-                "music_id": "0b267f2ff57c446993ca1bef6c671af8",
+                "id": "d863a8cd800e4dda95fcda2a6f2573b5",
+                "local_material_id": "d863a8cd800e4dda95fcda2a6f2573b5",
+                "music_id": "d863a8cd800e4dda95fcda2a6f2573b5",
                 "name": "vo04_xiaoman.wav",
                 "path": "C:\\Users\\admin\\Desktop\\manju\\work\\laotang_ep01\\vo\\vo04_xiaoman.wav",
                 "source_platform": 0,
@@ -150,9 +150,9 @@
                 "duration": 1040000,
                 "effect_id": "",
                 "formula_id": "",
-                "id": "095582435dbb43a0bec144aa5fba6613",
-                "local_material_id": "095582435dbb43a0bec144aa5fba6613",
-                "music_id": "095582435dbb43a0bec144aa5fba6613",
+                "id": "910c40424ec2467d9ae7ecab798cb89a",
+                "local_material_id": "910c40424ec2467d9ae7ecab798cb89a",
+                "music_id": "910c40424ec2467d9ae7ecab798cb89a",
                 "name": "vo05_sunian_huoguo.wav",
                 "path": "C:\\Users\\admin\\Desktop\\manju\\work\\laotang_ep01\\vo\\vo05_sunian_huoguo.wav",
                 "source_platform": 0,
@@ -168,9 +168,9 @@
                 "duration": 2400000,
                 "effect_id": "",
                 "formula_id": "",
-                "id": "ee2eb49aacd340e39d783449d95b2122",
-                "local_material_id": "ee2eb49aacd340e39d783449d95b2122",
-                "music_id": "ee2eb49aacd340e39d783449d95b2122",
+                "id": "54546c325bff4db79d364ab0697c478c",
+                "local_material_id": "54546c325bff4db79d364ab0697c478c",
+                "music_id": "54546c325bff4db79d364ab0697c478c",
                 "name": "vo06_guyan.wav",
                 "path": "C:\\Users\\admin\\Desktop\\manju\\work\\laotang_ep01\\vo\\vo06_guyan.wav",
                 "source_platform": 0,
@@ -209,49 +209,49 @@
         "speeds": [
             {
                 "curve_speed": null,
-                "id": "055fc07643b84d4b8d327f267fd56b26",
+                "id": "2b67ca98165a400bb84185d38bf33156",
                 "mode": 0,
                 "speed": 1.0,
                 "type": "speed"
             },
             {
                 "curve_speed": null,
-                "id": "1fbb49bbf4b74b98aa1f0ed6461a5f72",
+                "id": "4be582e7c68440c9909254803e36b134",
                 "mode": 0,
                 "speed": 1.0,
                 "type": "speed"
             },
             {
                 "curve_speed": null,
-                "id": "ad2df7f47f9546fa8deff7870cd2c504",
+                "id": "15e718e4b563491eaa5e3e7ced77011d",
                 "mode": 0,
                 "speed": 1.0,
                 "type": "speed"
             },
             {
                 "curve_speed": null,
-                "id": "744c8fe7de0d4802b6ae4a9f8d5faf47",
+                "id": "32e1eb1c2c004c64a66a96d483f1ccd8",
                 "mode": 0,
                 "speed": 1.0,
                 "type": "speed"
             },
             {
                 "curve_speed": null,
-                "id": "5f3ae8f29e8c4ed38ee7afde882f4327",
+                "id": "30e0f967c1a84577944caa345ae3c84d",
                 "mode": 0,
                 "speed": 1.0,
                 "type": "speed"
             },
             {
                 "curve_speed": null,
-                "id": "938e17a806e544b294c0d23eb5e07baa",
+                "id": "c8974b40b6d046898cca891d2ceb9991",
                 "mode": 0,
                 "speed": 1.0,
                 "type": "speed"
             },
             {
                 "curve_speed": null,
-                "id": "dd2c322170984aa38e1e6d70fbee4576",
+                "id": "559a233646dd4d57a273a34f1520be71",
                 "mode": 0,
                 "speed": 1.0,
                 "type": "speed"
@@ -262,7 +262,7 @@
         "text_templates": [],
         "texts": [
             {
-                "id": "abc75e89ce6143ccb42ba3af7549a7a5",
+                "id": "308343c585224c5aa7f35d60a4e82251",
                 "content": "{\"styles\": [{\"fill\": {\"alpha\": 1.0, \"content\": {\"render_type\": \"solid\", \"solid\": {\"alpha\": 1.0, \"color\": [1.0, 1.0, 1.0]}}}, \"range\": [0, 13], \"size\": 5, \"bold\": false, \"italic\": false, \"underline\": false, \"strokes\": []}], \"text\": \"我妈留给我的，只有这锅汤。\"}",
                 "typesetting": 0,
                 "alignment": 1,
@@ -276,7 +276,7 @@
                 "global_alpha": 1.0
             },
             {
-                "id": "597c90ae794f44c5ac95ef7531038ad8",
+                "id": "936e834825574e8e9689a43f77f98b5c",
                 "content": "{\"styles\": [{\"fill\": {\"alpha\": 1.0, \"content\": {\"render_type\": \"solid\", \"solid\": {\"alpha\": 1.0, \"color\": [1.0, 1.0, 1.0]}}}, \"range\": [0, 11], \"size\": 5, \"bold\": false, \"italic\": false, \"underline\": false, \"strokes\": []}], \"text\": \"这店，从今天起不姓你。\"}",
                 "typesetting": 0,
                 "alignment": 1,
@@ -290,7 +290,7 @@
                 "global_alpha": 1.0
             },
             {
-                "id": "9ead4ccee4ef4e31b02024ba852f60bb",
+                "id": "39a56c21ff734e039bcbcfdebd41801e",
                 "content": "{\"styles\": [{\"fill\": {\"alpha\": 1.0, \"content\": {\"render_type\": \"solid\", \"solid\": {\"alpha\": 1.0, \"color\": [1.0, 1.0, 1.0]}}}, \"range\": [0, 6], \"size\": 5, \"bold\": false, \"italic\": false, \"underline\": false, \"strokes\": []}], \"text\": \"锅，我拿走。\"}",
                 "typesetting": 0,
                 "alignment": 1,
@@ -304,7 +304,7 @@
                 "global_alpha": 1.0
             },
             {
-                "id": "cfed8323e8b94a9e87e6e3fff7594bf7",
+                "id": "df60af9f36e6445cad3bec3fd9e42358",
                 "content": "{\"styles\": [{\"fill\": {\"alpha\": 1.0, \"content\": {\"render_type\": \"solid\", \"solid\": {\"alpha\": 1.0, \"color\": [1.0, 1.0, 1.0]}}}, \"range\": [0, 8], \"size\": 5, \"bold\": false, \"italic\": false, \"underline\": false, \"strokes\": []}], \"text\": \"姐，今晚吃什么？\"}",
                 "typesetting": 0,
                 "alignment": 1,
@@ -318,7 +318,7 @@
                 "global_alpha": 1.0
             },
             {
-                "id": "0ec913dfd18d43468ada4da8b6e982d9",
+                "id": "82a969bc9df74a50897688ed3c6847a3",
                 "content": "{\"styles\": [{\"fill\": {\"alpha\": 1.0, \"content\": {\"render_type\": \"solid\", \"solid\": {\"alpha\": 1.0, \"color\": [1.0, 1.0, 1.0]}}}, \"range\": [0, 3], \"size\": 5, \"bold\": false, \"italic\": false, \"underline\": false, \"strokes\": []}], \"text\": \"火锅。\"}",
                 "typesetting": 0,
                 "alignment": 1,
@@ -332,7 +332,7 @@
                 "global_alpha": 1.0
             },
             {
-                "id": "0a5e18506f1e429d84b2c9c73920b969",
+                "id": "8ea57394e8d540daa3e49c61a37e7908",
                 "content": "{\"styles\": [{\"fill\": {\"alpha\": 1.0, \"content\": {\"render_type\": \"solid\", \"solid\": {\"alpha\": 1.0, \"color\": [1.0, 1.0, 1.0]}}}, \"range\": [0, 11], \"size\": 5, \"bold\": false, \"italic\": false, \"underline\": false, \"strokes\": []}], \"text\": \"这锅汤，我找了十五年。\"}",
                 "typesetting": 0,
                 "alignment": 1,
@@ -370,9 +370,9 @@
                 "crop_scale": 1.0,
                 "duration": 90000000,
                 "height": 1920,
-                "id": "da1f845ade7b4765aaf3709f233d6c18",
+                "id": "4824629912914e44a346ec51e34d5b11",
                 "local_material_id": "",
-                "material_id": "da1f845ade7b4765aaf3709f233d6c18",
+                "material_id": "4824629912914e44a346ec51e34d5b11",
                 "material_name": "laotang_ep01_conform.mp4",
                 "media_path": "",
                 "path": "C:\\Users\\admin\\Desktop\\manju\\work\\laotang_ep01\\cut\\laotang_ep01_conform.mp4",
@@ -396,7 +396,7 @@
         {
             "attribute": 0,
             "flag": 0,
-            "id": "9b92c047a4d843b589ff8be1d25256b6",
+            "id": "5554f2562a574bed9da8b62c5fb1af2c",
             "is_default_name": false,
             "name": "video",
             "segments": [
@@ -413,8 +413,8 @@
                     "track_attribute": 0,
                     "track_render_index": 0,
                     "visible": true,
-                    "id": "148e1153809347e89768eabbe5f32726",
-                    "material_id": "da1f845ade7b4765aaf3709f233d6c18",
+                    "id": "4ca1499257544136bf3aaad4e3935fae",
+                    "material_id": "4824629912914e44a346ec51e34d5b11",
                     "target_timerange": {
                         "start": 0,
                         "duration": 90000000
@@ -428,7 +428,7 @@
                     "speed": 1.0,
                     "volume": 1.0,
                     "extra_material_refs": [
-                        "055fc07643b84d4b8d327f267fd56b26"
+                        "2b67ca98165a400bb84185d38bf33156"
                     ],
                     "is_tone_modify": false,
                     "clip": {
@@ -464,7 +464,7 @@
         {
             "attribute": 0,
             "flag": 0,
-            "id": "4024da47823e4fceaea290728aeae6c1",
+            "id": "b1d8f80b33144cc5bdd52472ed2cceb0",
             "is_default_name": false,
             "name": "字幕",
             "segments": [
@@ -481,8 +481,8 @@
                     "track_attribute": 0,
                     "track_render_index": 0,
                     "visible": true,
-                    "id": "0d9f9fc36bf141849f0384675c82ddb3",
-                    "material_id": "abc75e89ce6143ccb42ba3af7549a7a5",
+                    "id": "b10423c580964f3ea4f62e0f78bdfe6d",
+                    "material_id": "308343c585224c5aa7f35d60a4e82251",
                     "target_timerange": {
                         "start": 0,
                         "duration": 3287000
@@ -493,7 +493,7 @@
                     "speed": 1.0,
                     "volume": 1.0,
                     "extra_material_refs": [
-                        "696919a3fa5b49e99df3688b5ba4e88a"
+                        "ab747c7fce824d28912692ae202a6b44"
                     ],
                     "is_tone_modify": false,
                     "clip": {
@@ -531,8 +531,8 @@
                     "track_attribute": 0,
                     "track_render_index": 0,
                     "visible": true,
-                    "id": "3d4f4dc5902141f8b8472091cc82efd6",
-                    "material_id": "597c90ae794f44c5ac95ef7531038ad8",
+                    "id": "0f256a885e9240c987ca331711ee6d94",
+                    "material_id": "936e834825574e8e9689a43f77f98b5c",
                     "target_timerange": {
                         "start": 11000000,
                         "duration": 4473000
@@ -543,7 +543,7 @@
                     "speed": 1.0,
                     "volume": 1.0,
                     "extra_material_refs": [
-                        "667ba83b8cde4ec6babdc0a7f734b120"
+                        "a40af479b05e41f9aab3c12ea75cef0e"
                     ],
                     "is_tone_modify": false,
                     "clip": {
@@ -581,8 +581,8 @@
                     "track_attribute": 0,
                     "track_render_index": 0,
                     "visible": true,
-                    "id": "f20280bb59094c0cb28a14de7715d091",
-                    "material_id": "9ead4ccee4ef4e31b02024ba852f60bb",
+                    "id": "f1efbf09103d44d188d374c9973b5b41",
+                    "material_id": "39a56c21ff734e039bcbcfdebd41801e",
                     "target_timerange": {
                         "start": 33000000,
                         "duration": 2098000
@@ -593,7 +593,7 @@
                     "speed": 1.0,
                     "volume": 1.0,
                     "extra_material_refs": [
-                        "31db900063ec4710b567e77686d7baa5"
+                        "d5ed42eec9484091ab61274d06d6cf6d"
                     ],
                     "is_tone_modify": false,
                     "clip": {
@@ -631,8 +631,8 @@
                     "track_attribute": 0,
                     "track_render_index": 0,
                     "visible": true,
-                    "id": "4c05525e873d456a95a6b42de7bb172f",
-                    "material_id": "cfed8323e8b94a9e87e6e3fff7594bf7",
+                    "id": "51ff811ce82f45f79794360e95bec5ae",
+                    "material_id": "df60af9f36e6445cad3bec3fd9e42358",
                     "target_timerange": {
                         "start": 56000000,
                         "duration": 1817000
@@ -643,7 +643,7 @@
                     "speed": 1.0,
                     "volume": 1.0,
                     "extra_material_refs": [
-                        "19fea078d1d44d3bad7ddf25068597bd"
+                        "0303e0da1983467cbcea43dfcaaad06b"
                     ],
                     "is_tone_modify": false,
                     "clip": {
@@ -681,8 +681,8 @@
                     "track_attribute": 0,
                     "track_render_index": 0,
                     "visible": true,
-                    "id": "6d936e45de084706a33323fedc668af6",
-                    "material_id": "0ec913dfd18d43468ada4da8b6e982d9",
+                    "id": "46b0ba94b42f4930a6cdf91fc2fba511",
+                    "material_id": "82a969bc9df74a50897688ed3c6847a3",
                     "target_timerange": {
                         "start": 57900000,
                         "duration": 1210000
@@ -693,7 +693,7 @@
                     "speed": 1.0,
                     "volume": 1.0,
                     "extra_material_refs": [
-                        "c801efbe39db44d6a372805d1ba7d0fa"
+                        "4edbf2967b3e4b53921a0bfcc26e531f"
                     ],
                     "is_tone_modify": false,
                     "clip": {
@@ -731,8 +731,8 @@
                     "track_attribute": 0,
                     "track_render_index": 0,
                     "visible": true,
-                    "id": "5a6f219fef7f4a7b8cf08e59aa203901",
-                    "material_id": "0a5e18506f1e429d84b2c9c73920b969",
+                    "id": "f7e6372e02b44f6e9d756481c1234d31",
+                    "material_id": "8ea57394e8d540daa3e49c61a37e7908",
                     "target_timerange": {
                         "start": 76000000,
                         "duration": 2463000
@@ -743,7 +743,7 @@
                     "speed": 1.0,
                     "volume": 1.0,
                     "extra_material_refs": [
-                        "9b4a6d110da648709210136b1ccac6bb"
+                        "bade9890603546548865cd7afc5e10f7"
                     ],
                     "is_tone_modify": false,
                     "clip": {
@@ -774,7 +774,7 @@
         {
             "attribute": 0,
             "flag": 0,
-            "id": "e70fba5579674b4dbc4e992aea4641b6",
+            "id": "b73101da9e9a4770b28a938308edeaec",
             "is_default_name": false,
             "name": "audio",
             "segments": [
@@ -791,8 +791,8 @@
                     "track_attribute": 0,
                     "track_render_index": 0,
                     "visible": true,
-                    "id": "6571fb90b1ed49cc900ec8257a6e28cf",
-                    "material_id": "c4bb048dfe5541ba9ffc6f89f3bbe992",
+                    "id": "b821c43b3eff47b59d49698c0fd4c073",
+                    "material_id": "72f8a70e086e4ad98ba3ffafb515fe8a",
                     "target_timerange": {
                         "start": 0,
                         "duration": 3120000
@@ -806,7 +806,7 @@
                     "speed": 1.0,
                     "volume": 1.0,
                     "extra_material_refs": [
-                        "1fbb49bbf4b74b98aa1f0ed6461a5f72"
+                        "4be582e7c68440c9909254803e36b134"
                     ],
                     "is_tone_modify": false,
                     "clip": null,
@@ -826,8 +826,8 @@
                     "track_attribute": 0,
                     "track_render_index": 0,
                     "visible": true,
-                    "id": "cab6dd7ed2584ee9af451afca0056ff8",
-                    "material_id": "19a4a62d50164fe894724666bdd7d1e2",
+                    "id": "df986aa48c1947ada57675de334b7639",
+                    "material_id": "5a53d7177a864649b68fa4f7175b7d20",
                     "target_timerange": {
                         "start": 11000000,
                         "duration": 4400000
@@ -841,7 +841,7 @@
                     "speed": 1.0,
                     "volume": 1.0,
                     "extra_material_refs": [
-                        "ad2df7f47f9546fa8deff7870cd2c504"
+                        "15e718e4b563491eaa5e3e7ced77011d"
                     ],
                     "is_tone_modify": false,
                     "clip": null,
@@ -861,8 +861,8 @@
                     "track_attribute": 0,
                     "track_render_index": 0,
                     "visible": true,
-                    "id": "58ed989be8f9446a9b9400488273001e",
-                    "material_id": "058a15c78a25445fad4f22f1829c0f49",
+                    "id": "c5256f6e6093409f87b872b90667dd3b",
+                    "material_id": "dd42fcd7842c45a59a525d3f386c9892",
                     "target_timerange": {
                         "start": 33000000,
                         "duration": 1920000
@@ -876,7 +876,7 @@
                     "speed": 1.0,
                     "volume": 1.0,
                     "extra_material_refs": [
-                        "744c8fe7de0d4802b6ae4a9f8d5faf47"
+                        "32e1eb1c2c004c64a66a96d483f1ccd8"
                     ],
                     "is_tone_modify": false,
                     "clip": null,
@@ -896,8 +896,8 @@
                     "track_attribute": 0,
                     "track_render_index": 0,
                     "visible": true,
-                    "id": "6ca13ab9b46e4cda80639ccd2593c2c2",
-                    "material_id": "0b267f2ff57c446993ca1bef6c671af8",
+                    "id": "a6e1a9c8cb8b4c568c634bc3f3cdc32e",
+                    "material_id": "d863a8cd800e4dda95fcda2a6f2573b5",
                     "target_timerange": {
                         "start": 56000000,
                         "duration": 1520000
@@ -911,7 +911,7 @@
                     "speed": 1.0,
                     "volume": 1.0,
                     "extra_material_refs": [
-                        "5f3ae8f29e8c4ed38ee7afde882f4327"
+                        "30e0f967c1a84577944caa345ae3c84d"
                     ],
                     "is_tone_modify": false,
                     "clip": null,
@@ -931,8 +931,8 @@
                     "track_attribute": 0,
                     "track_render_index": 0,
                     "visible": true,
-                    "id": "931c03fd07054834936f9a8e79a22ee8",
-                    "material_id": "095582435dbb43a0bec144aa5fba6613",
+                    "id": "825069a481674a7b8ed45c08c9b95ad1",
+                    "material_id": "910c40424ec2467d9ae7ecab798cb89a",
                     "target_timerange": {
                         "start": 57900000,
                         "duration": 1040000
@@ -946,7 +946,7 @@
                     "speed": 1.0,
                     "volume": 1.0,
                     "extra_material_refs": [
-                        "938e17a806e544b294c0d23eb5e07baa"
+                        "c8974b40b6d046898cca891d2ceb9991"
                     ],
                     "is_tone_modify": false,
                     "clip": null,
@@ -966,8 +966,8 @@
                     "track_attribute": 0,
                     "track_render_index": 0,
                     "visible": true,
-                    "id": "568b35e10f3545dfbb18951f5c7ceea4",
-                    "material_id": "ee2eb49aacd340e39d783449d95b2122",
+                    "id": "ce1ca8cfeb594b519f435172fe3d54bc",
+                    "material_id": "54546c325bff4db79d364ab0697c478c",
                     "target_timerange": {
                         "start": 76000000,
                         "duration": 2400000
@@ -981,7 +981,7 @@
                     "speed": 1.0,
                     "volume": 1.0,
                     "extra_material_refs": [
-                        "dd2c322170984aa38e1e6d70fbee4576"
+                        "559a233646dd4d57a273a34f1520be71"
                     ],
                     "is_tone_modify": false,
                     "clip": null,

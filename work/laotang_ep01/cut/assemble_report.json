@@ -1,7 +1,7 @@
 {
   "episode": "laotang_ep01",
   "output": "work/laotang_ep01/cut/laotang_ep01_conform.mp4",
-  "bytes": 40589809,
+  "bytes": 41654477,
   "duration": 90.0,
   "video_duration": 90.0,
   "width": 1080,
@@ -13,28 +13,14 @@
   "vo_lines": 6,
   "holds": [
     {
-      "unit": 2,
-      "frozen_seconds": 0.458
-    },
-    {
-      "unit": 4,
-      "frozen_seconds": 0.458
-    },
-    {
       "unit": 10,
+      "frozen_frames": 47,
       "frozen_seconds": 1.958
-    },
-    {
-      "unit": 12,
-      "frozen_seconds": 0.958
     },
     {
       "unit": 17,
+      "frozen_frames": 47,
       "frozen_seconds": 1.958
-    },
-    {
-      "unit": 18,
-      "frozen_seconds": 0.958
     }
   ],
   "program_number": null,

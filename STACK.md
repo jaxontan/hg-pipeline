@@ -181,7 +181,7 @@ failed renders are derived and safe to remove; that is what the 14 Nov tidy did.
 | Gap | Effect | Smallest fix |
 |---|---|---|
 | No Jianying (app) | the 10% human pass (花字, sound design) and opening the draft are impossible | install Jianying, pinned ≤ 5.8 (`plan.md` §7.5). `pyJianYingDraft` itself is **done** — `win/venv_jianying` + `win/build_jianying_draft.py` |
-| Six units longer than a clip | 6.75 s of the 90 s cut has no picture behind it | editorial: re-time those six units, or accept the freeze-fill |
+| Units longer than a clip | 3.92 s of the 90 s cut has no picture behind it (units 10, 17) | VACE continuation, or cut those two units. Units 2, 4, 12, 18 were re-timed on 14 Nov by moving one cut point each |
 | No bed, no SFX | everywhere nobody speaks is digital silence (−91 dB) | needs a music/SFX pass; nothing in the repo supplies one |
 | ~~No git repo~~ | **resolved 14 Nov** — `git init` + initial commit (93 files: docs, `win/`, `spark/`, `reference/`, text assets). Large media and ffmpeg binaries excluded via `.gitignore` | — |
 | No director agent / no LLM anywhere | prompts, EDL and casting are hand-authored; nothing compiles a beat into a prompt pair | deliberate for ep01 (19 shots, one auteur). A shot compiler is the thing to build before an agent |

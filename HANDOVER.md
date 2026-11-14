@@ -15,8 +15,9 @@ Written 2026-11-13. Repo root: `C:\Users\admin\Desktop\manju`.
 
 > Read `HANDOVER.md` in `C:\Users\admin\Desktop\manju`, plus `work/sets/huoguo/README.md`.
 > Phases 1–5 are DONE to a delivery master (picture, voice, conform, Jianying draft). What is left is
-> judgement, not pipeline: an ear on three voices, a sound pass, and the editorial call on six
-> freeze-filled units. See `newsession1.md` §11 and §7. Do not rebuild or re-render the set — it is
+> judgement, not pipeline: an ear on three voices, a sound pass, and the VACE continuation for the two
+> remaining freeze-filled units (10, 17). See `newsession1.md` §11 and §7. Do not rebuild or re-render
+> the set — it is
 > finished and the user may have it open in Blender. Do not re-render a clip or a voice line without
 > reading `newsession1.md` first. Follow the rules in `AGENTS.md`; anything outside the two writable
 > roots is forbidden.
@@ -566,15 +567,17 @@ dialogue, and 苏念 has no face in ep01.
 
 `win/assemble.py` + repo-local `win/tools/ffmpeg` already produced the first delivery master:
 `work/laotang_ep01/cut/laotang_ep01_conform.mp4` — 90.00 s, 1080×1920, 24 fps, 2160 frames,
-40.6 MB, with captions, 片头 title block and per-episode AI label burned in. ffmpeg is repo-local
+41.7 MB (sha256 `8710fdc0…`), with captions, 片头 title block and per-episode AI label burned in.
+ffmpeg is repo-local
 (not installed, PATH untouched) and must be GPL-family (libass/freetype/fribidi load-bearing).
 
 The assembler refuses (rules, not warnings): no clip without provenance (19/19 joined by shot_id +
 recorded output filename), no global master containing a restricted-territory unit, no `--final`
 while `compliance.program_number` is empty, and no silent duration drift (encoded picture must match
-the cut within 0.25 s). Two open decisions, both creative: (a) six units are longer than a 5.04 s
-clip (2, 4, 10, 12, 17, 18 — 6.75 s short total, 12.54 s headroom elsewhere) — `--allow-hold`
-freeze-fills the tail, or re-time the cut; (b) no bed/SFX, so non-speech measures −91 dB (digital
+the cut within 0.25 s). Two open decisions, both creative: (a) units longer than their clip — four of
+six were re-timed on 14 Nov by moving one cut point each and giving the freed frames to the next unit
+(2, 4, 12, 18 → gone; units 10 and 17 still hold 1.958 s each, pending a VACE continuation or a
+shorter episode); (b) no bed/SFX, so non-speech measures −91 dB (digital
 silence) — the shotlist's SFX column has no assets behind it.
 
 **Done 14 Nov:** repo-local venv created at `win/venv_jianying` (Python 3.12, pyJianYingDraft 0.3.1,
@@ -599,7 +602,7 @@ generator. (2) The freeze-fills are baked into the picture track, so changing th
 **Verified 14 Nov — and one defect found by verifying.** `win\verify_delivery.py` checks the master,
 the captions, the six wavs and the draft against each other: ffprobe for the container, per-line level
 against `MEASURE.json`, caption text and timing against the spec, absolute in-repo paths in the draft,
-and the six freeze-fills by PSNR. It found the mix shipping **3 dB quiet** —
+and the freeze-fills by PSNR. It found the mix shipping **3 dB quiet** —
 `aformat=…channel_layouts=stereo` equal-power-spreads a mono wav, landing 1/√2 per channel.
 `pan=stereo|c0=c0|c1=c0` fixed it, the master was rebuilt, and the dialogue now matches the wavs
 exactly (−19.0 … −22.2 dBFS per line, peak −3.7 dBFS). **Run it after any re-assembly; it needs no
@@ -642,7 +645,7 @@ anything. Replacing mannequins needs no rework of the set or the rigs.
 | Blocker | Smallest unblock |
 |---|---|
 | **No bed, no SFX** — non-speech measures −91 dB | a licensed ambience/SFX pass (music + pot crash, rain, bead curtain, market), each with provenance |
-| **Six units freeze-filled** (2, 4, 10, 12, 17, 18 — 6.75 s total) | editorial call: accept the holds, or re-time the cut and re-run `win/assemble.py` |
+| **Units 10 and 17 freeze-filled** (1.958 s each, 3.92 s total) | VACE continuation on the Spark, or cut those two units and accept an 86.08 s episode. Units 2, 4, 12, 18 were re-timed on 14 Nov — no longer holds |
 | **Draft unverified in Jianying** (not installed here) | operator opens it; pin Jianying ≤5.8 per `plan.md` §7.5 |
 | `--final` refused while `compliance.program_number` is empty | the number comes from platform review; inventing one is a fake regulatory mark |
 | 顾衍 voice is 75 Hz — intelligible, low for a man of 30 | an ear decides; cloning, not more prompt tuning (85 Hz cost 5/9 ASR characters) |
@@ -664,7 +667,8 @@ conversation — no other context needed.
 > `C:\Users\admin\Desktop\manju\newsession1.md` §11 and §7. Phases 1–5 are done: the 90 s conform
 > master is at `work/laotang_ep01/cut/laotang_ep01_conform.mp4` and the Jianying draft at
 > `work/laotang_ep01/jianying_drafts/laotang_ep01/`. Do not re-render clips or voice. The three open
-> decisions are listed in §7 of `newsession1.md` — a sound/SFX pass, the six freeze-filled units, and
+> decisions are listed in §7 of `newsession1.md` — a sound/SFX pass, the two remaining freeze-filled
+> units (10 and 17, which need a VACE continuation), and
 > whether the draft opens in Jianying (not installed here). Ask which of the three to take before
 > touching anything.
 

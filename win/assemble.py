@@ -216,11 +216,17 @@ def main() -> int:
             "Fill compliance.program_number once the 播出单位 issues it.")
 
     # ---- duration -------------------------------------------------------
+    # A clip is a whole number of frames: 121 frames is 5.0417 s, and "5.5 s" is
+    # not a length any clip can have. So the conform counts FRAMES, and the trim
+    # stops a sliver inside the last wanted frame. Doing this in seconds let
+    # rounding decide: `duration=5.042` and `duration=5.041667` both happen to
+    # give 121 frames on a 121-frame clip, but `duration=3.459` gives 84 frames
+    # where 83 were meant — one frame of drift per unit, silently.
     clips = {u["clip"]: ROOT / "work" / episode / u["clip"] for u in units}
     info = {}
+    frames_of, holds, shortfall = {}, [], []
     print(f"\n{episode}: {len(units)} units, {target:.2f} s target, {W}x{H} @ {fps} fps")
-    print(f"{'#':>2} {'shot':7s} {'unit':>6s} {'clip':>6s} {'slack':>7s}")
-    shortfall, holds = [], []
+    print(f"{'#':>2} {'shot':7s} {'unit':>6s} {'clip':>6s} {'slack':>9s}")
     for u in units:
         c = clips[u["clip"]]
         if not c.exists():
@@ -232,19 +238,25 @@ def main() -> int:
         src_in = float(u.get("src_in", 0.0))
         if src_in + need > target + EPS:
             die(f"unit {u['n']}: src_in {src_in:.2f}s + {need:.2f}s runs past the episode")
-        slack = have - src_in - need
-        flag = "" if slack >= -EPS else "  SHORT"
-        print(f"{u['n']:>2} {u['shot']:7s} {need:6.2f} {have:6.2f} {slack:+7.2f}{flag}")
-        if slack < -EPS:
-            shortfall.append((u["n"], need, have, -slack))
-            holds.append((u["n"], -slack))
+        n_fr = max(1, round(need * fps))
+        have_fr = int(round(have * fps))
+        src_fr = int(round(src_in * fps))
+        slack_fr = have_fr - src_fr - n_fr
+        frames_of[u["n"]] = n_fr
+        flag = "" if slack_fr >= 0 else "  SHORT"
+        print(f"{u['n']:>2} {u['shot']:7s} {n_fr:4d}fr {have_fr:4d}fr "
+              f"{slack_fr:+4d}fr ({slack_fr / fps:+.3f}s){flag}")
+        if slack_fr < 0:
+            shortfall.append((u["n"], n_fr, have_fr, -slack_fr))
+            holds.append((u["n"], -slack_fr))
 
     print(f"provenance: {len(prov_of)}/{len(units)} units accounted for")
     if shortfall:
         print("\nunits longer than the clip they come from:")
         for n, need, have, short in shortfall:
-            print(f"  unit {n}: needs {need:.2f} s, clip is {have:.2f} s, short {short:.2f} s")
-        print(f"  total short {sum(s[3] for s in shortfall):.2f} s. "
+            print(f"  unit {n}: needs {need} frames, clip is {have}, short {short}")
+        print(f"  total short {sum(s[3] for s in shortfall)} frames "
+              f"({sum(s[3] for s in shortfall) / fps:.2f} s). "
               f"A clip cannot be longer than it is; every one of these is an editorial call "
               f"(re-time the cut, or freeze/slow the tail).")
         if not args.allow_hold:
@@ -275,15 +287,18 @@ def main() -> int:
 
     parts = []
     for i, u in enumerate(units):
-        hold = dict(holds).get(u["n"])
-        # in/out are timeline positions; the clip is taken from src_in.
+        hold_fr = dict(holds).get(u["n"], 0)
+        n_fr = frames_of[u["n"]]
+        # in/out are timeline positions; the clip is taken from src_in. The trim
+        # stops 1 ms inside the last wanted frame so a rounding edge can never
+        # hand the concat one frame too many or too few.
         chain = (f"trim=start={float(u.get('src_in', 0.0)):.3f}:"
-                 f"duration={u['out']-u['in']:.3f},"
+                 f"duration={n_fr / fps - EPS:.6f},"
                  f"setpts=PTS-STARTPTS,fps={fps}")
-        if hold:
+        if hold_fr:
             # Exactly the shortfall: padding by a safety margin silently stretches
             # the episode (6 holds x 0.1 s = 0.6 s too long).
-            chain += f",tpad=stop_mode=clone:stop_duration={hold:.3f}"
+            chain += f",tpad=stop_mode=clone:stop_duration={hold_fr / fps:.6f}"
         chain += (f",scale={W}:{H}:force_original_aspect_ratio=decrease,"
                   f"pad={W}:{H}:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1")
         parts.append(f"[{i}:v]{chain}[v{i}]")
@@ -378,7 +393,8 @@ def main() -> int:
         "units": len(units),
         "subtitles": n_subs,
         "vo_lines": len(vo_order),
-        "holds": [{"unit": n, "frozen_seconds": round(s, 3)} for n, s in holds],
+        "holds": [{"unit": n, "frozen_frames": s, "frozen_seconds": round(s / fps, 3)}
+                  for n, s in holds],
         "program_number": program or None,
         "final": bool(args.final),
         "ffmpeg": subprocess.run([str(FFMPEG), "-hide_banner", "-version"],
