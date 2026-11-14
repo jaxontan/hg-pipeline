@@ -1,0 +1,203 @@
+{
+  "set": "huoguo",
+  "story": "laotang",
+  "resolution": [
+    768,
+    1344
+  ],
+  "units": "metres",
+  "shots": {
+    "s001": {
+      "loc": [
+        3.55,
+        -3.1,
+        1.58
+      ],
+      "target": [
+        0.0,
+        0.7,
+        1.05
+      ],
+      "lens_mm": 24.0,
+      "depth_near_m": 2.614,
+      "depth_far_m": 10.977,
+      "note": "establishing, in through the door"
+    },
+    "s002": {
+      "loc": [
+        -0.55,
+        -0.65,
+        1.02
+      ],
+      "target": [
+        0.32,
+        0.52,
+        0.88
+      ],
+      "lens_mm": 35.0,
+      "depth_near_m": 0.732,
+      "depth_far_m": 3.932,
+      "note": "low hero framing on the pot"
+    },
+    "s003": {
+      "loc": [
+        2.75,
+        0.55,
+        1.22
+      ],
+      "target": [
+        0.2,
+        0.45,
+        1.1
+      ],
+      "lens_mm": 24.0,
+      "depth_near_m": 1.277,
+      "depth_far_m": 5.365,
+      "note": "profile two-shot, \u4e8c\u53d4 standing over \u82cf\u5ff5"
+    },
+    "s004": {
+      "loc": [
+        0.72,
+        -0.6,
+        1.2
+      ],
+      "target": [
+        0.3,
+        1.18,
+        1.16
+      ],
+      "lens_mm": 50.0,
+      "depth_near_m": 0.915,
+      "depth_far_m": 4.115,
+      "note": "close on \u82cf\u5ff5, kitchen pass behind her"
+    },
+    "s005": {
+      "loc": [
+        -1.05,
+        -2.15,
+        1.2
+      ],
+      "target": [
+        -2.28,
+        -0.4,
+        1.14
+      ],
+      "lens_mm": 40.0,
+      "depth_near_m": 1.07,
+      "depth_far_m": 4.494,
+      "note": "\u987e\u884d alone at the window table"
+    },
+    "s006": {
+      "loc": [
+        3.1,
+        -5.45,
+        1.52
+      ],
+      "target": [
+        1.2,
+        -4.3,
+        0.95
+      ],
+      "lens_mm": 35.0,
+      "depth_near_m": 1.146,
+      "depth_far_m": 4.815,
+      "note": "street stall, two-shot"
+    },
+    "s007": {
+      "loc": [
+        3.9,
+        1.9,
+        1.58
+      ],
+      "target": [
+        -0.2,
+        -0.9,
+        0.92
+      ],
+      "lens_mm": 30.0,
+      "depth_near_m": 2.504,
+      "depth_far_m": 10.518,
+      "note": "reverse wide from behind the counter, tilted down off the ceiling"
+    },
+    "s008": {
+      "loc": [
+        2.55,
+        -3.85,
+        1.32
+      ],
+      "target": [
+        1.02,
+        -4.86,
+        1.0
+      ],
+      "lens_mm": 24.0,
+      "depth_near_m": 0.931,
+      "depth_far_m": 4.131,
+      "note": "the first customer behind the folding stall, shutters behind"
+    },
+    "s009": {
+      "loc": [
+        1.02,
+        -5.62,
+        1.2
+      ],
+      "target": [
+        1.02,
+        -4.9,
+        1.0
+      ],
+      "lens_mm": 85.0,
+      "depth_near_m": 0.374,
+      "depth_far_m": 3.574,
+      "note": "tight CU: \u987e\u884d tastes one spoonful, then sets it down"
+    },
+    "s010": {
+      "loc": [
+        0.3,
+        0.08,
+        1.26
+      ],
+      "target": [
+        0.3,
+        1.22,
+        1.09
+      ],
+      "lens_mm": 85.0,
+      "depth_near_m": 0.576,
+      "depth_far_m": 3.776,
+      "note": "tight CU: \u82cf\u5ff5's face, the freeze"
+    },
+    "s011": {
+      "loc": [
+        0.0,
+        4.25,
+        1.42
+      ],
+      "target": [
+        0.05,
+        2.9,
+        1.15
+      ],
+      "lens_mm": 45.0,
+      "depth_near_m": 0.689,
+      "depth_far_m": 3.889,
+      "note": "through the pass-through, \u82cf\u5ff5 carrying the pot toward camera"
+    },
+    "s012": {
+      "loc": [
+        1.2,
+        -5.9,
+        1.6
+      ],
+      "target": [
+        0.9,
+        -3.45,
+        1.25
+      ],
+      "lens_mm": 30.0,
+      "depth_near_m": 1.246,
+      "depth_far_m": 5.235,
+      "note": "shop front from the street at night, whole frontage"
+    }
+  }
+}

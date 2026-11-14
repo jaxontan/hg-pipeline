@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "note": "Pin for restore.sh and doctor.sh. Regenerate with win/mirror_provenance.py; never hand-edit.",
+  "host": "192.168.1.103",
+  "source": "~/Desktop/AIGC-Model/provenance",
+  "generated_utc": "2026-11-14T03:33:36Z",
+  "files": {
+    "ep00_p2_smoke/MODEL_PROVENANCE.json": {
+      "bytes": 2111,
+      "sha256": "18f9130fbc53427db0f36c0c0fcb291c385e33ab944cbe57a635748cfffcff31",
+      "entries": 1
+    },
+    "ep00_p3_previz/MODEL_PROVENANCE.json": {
+      "bytes": 2591,
+      "sha256": "e43f68c98f52364bc5e941e317b0637b8cc6502e95d69d20afa8e3355956dd02",
+      "entries": 1
+    },
+    "ep00_p5_handoff/MODEL_PROVENANCE.json": {
+      "bytes": 4993,
+      "sha256": "24cf33ac98d7f650fbfda62827e94ea9c0bd07c15531d51b8b468901e89ca91e",
+      "entries": 2
+    },
+    "laotang_ep01/MODEL_PROVENANCE.json": {
+      "bytes": 156805,
+      "sha256": "e6ddb99cdf7247093437f87b0af14cde8fb9252ddbd03186fc2652dab21e728f",
+      "entries": 66
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "episode": "ep00_p3_previz",
+  "schema": 1,
+  "entries": [
+    {
+      "job_id": "d718716e1aa14bb1",
+      "episode": "ep00_p3_previz",
+      "shot_id": "s001",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "7a240dd3-3c92-49c9-ba8c-c06e3afe0359",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "c47b568278bdffde40a338a9ff3e79a398fe2d36fb9abc476bf98e8a764570d8",
+      "blender_sha256": "e61e53095eef898cf6e4ebb9c83a45b92f14c43f9747a4f4ca477834924e2458",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00001_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "62174f68667686cf31ac3f94ef165c00178e0b5006a438b18a9a16eb2051c9cb",
+          "bytes": 1056551
+        }
+      ],
+      "timestamp": "2026-11-13T07:54:56Z"
+    }
+  ]
+}

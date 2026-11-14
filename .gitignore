@@ -1,0 +1,24 @@
+# Freebuff project marker
+.freebuff/
+
+# Large, reproducible binaries (re-download via win/get_ffmpeg.sh)
+win/tools/ffmpeg/
+
+# Scratch / derived
+win/.btmp/
+work/.btmp/
+**/__pycache__/
+*.pyc
+
+# Large media assets (canonical clips/keyframes/voice are referenced by provenance,
+# not by git; keep the EDL/spec text files)
+work/**/*.mp4
+work/**/*.png
+work/**/*.wav
+work/**/*.jpg
+work/**/*.jpeg
+work/**/*.webm
+
+# OS junk
+.DS_Store
+Thumbs.db

@@ -1,0 +1,38 @@
+{
+  "episode": "laotang_ep01",
+  "source": "work/story/shotlist_laotang_ep01.md — the 'In–out' column, transcribed 14 Nov",
+  "schema_note": "in/out are EPISODE timeline positions in seconds (that is what the shotlist column is). src_in is the offset INSIDE the source clip where the unit starts, default 0 = take the clip from its head. Conflating the two trims every unit that starts after 5.04 s to nothing.",
+  "note": "Unit lengths are the cut as written in the shotlist; they are NOT free to change without an editorial decision. Six units request more than the 5.04 s a clip contains (units 2, 4, 10, 12, 17, 18) — assemble.py reports the shortfall and refuses to guess.",
+  "fps": 24,
+  "target_seconds": 90.0,
+  "delivery": { "width": 1080, "height": 1920 },
+  "compliance": {
+    "title": "老汤",
+    "program_number": "",
+    "program_number_placeholder": "（　）网微剧备字（2026）第＿＿＿＿号",
+    "ai_label": "本片由AI辅助生成",
+    "class": "三类",
+    "note": "节目编号 is issued by the 播出单位 when a 三类 episode clears pre-broadcast review (令第16号 Art.27, 2026-09-01). It cannot be invented, so it stays empty until the platform issues it; assemble.py refuses --final while it is empty."
+  },
+  "units": [
+    { "n": 1,  "in": 0.0,  "out": 2.5,  "src_in": 0.0, "shot": "s002m",  "clip": "s002m_manju_clip_00002_.mp4", "territory": "both", "lines": ["vo01"] },
+    { "n": 2,  "in": 2.5,  "out": 8.0,  "src_in": 0.0, "shot": "s011m",  "clip": "s011m_manju_clip_00017_.mp4", "territory": "both", "lines": [] },
+    { "n": 3,  "in": 8.0,  "out": 11.0, "src_in": 0.0, "shot": "s001m",  "clip": "s001m_manju_clip_00001_.mp4", "territory": "both", "lines": [] },
+    { "n": 4,  "in": 11.0, "out": 16.5, "src_in": 0.0, "shot": "s003m",  "clip": "s003m_manju_clip_00009_.mp4", "territory": "both", "lines": ["vo02"] },
+    { "n": 5,  "in": 16.5, "out": 20.0, "src_in": 0.0, "shot": "s002c",  "clip": "s002c_manju_clip_00011_.mp4", "territory": "both", "lines": [] },
+    { "n": 6,  "in": 20.0, "out": 24.0, "src_in": 0.0, "shot": "s005m",  "clip": "s005m_manju_clip_00005_.mp4", "territory": "both", "lines": [] },
+    { "n": 7,  "in": 24.0, "out": 29.0, "src_in": 0.0, "shot": "s004em", "clip": "s004em_manju_clip_00004_.mp4", "territory": "both", "lines": [] },
+    { "n": 8,  "in": 29.0, "out": 33.0, "src_in": 0.0, "shot": "s007bm", "clip": "s007bm_manju_clip_00007_.mp4", "territory": "both", "lines": [] },
+    { "n": 9,  "in": 33.0, "out": 38.0, "src_in": 0.0, "shot": "s004g",  "clip": "s004g_manju_clip_00010_.mp4", "territory": "both", "lines": ["vo03"] },
+    { "n": 10, "in": 38.0, "out": 45.0, "src_in": 0.0, "shot": "s001m",  "clip": "s001m_manju_clip_00001_.mp4", "territory": "both", "lines": [], "note": "reuse of unit 3's clip" },
+    { "n": 11, "in": 45.0, "out": 50.0, "src_in": 0.0, "shot": "x001",   "clip": "x001_manju_clip_00012_.mp4", "territory": "both", "lines": [] },
+    { "n": 12, "in": 50.0, "out": 56.0, "src_in": 0.0, "shot": "x002",   "clip": "x002_manju_clip_00013_.mp4", "territory": "both", "lines": [] },
+    { "n": 13, "in": 56.0, "out": 60.0, "src_in": 0.0, "shot": "x003",   "clip": "x003_manju_clip_00014_.mp4", "territory": "both", "lines": ["vo04", "vo05"] },
+    { "n": 14, "in": 60.0, "out": 65.0, "src_in": 0.0, "shot": "s006m",  "clip": "s006m_manju_clip_00006_.mp4", "territory": "both", "lines": [] },
+    { "n": 15, "in": 65.0, "out": 70.0, "src_in": 0.0, "shot": "s012m",  "clip": "s012m_manju_clip_00019_.mp4", "territory": "both", "lines": [] },
+    { "n": 16, "in": 70.0, "out": 75.0, "src_in": 0.0, "shot": "s008m",  "clip": "s008m_manju_clip_00008_.mp4", "territory": "both", "lines": [] },
+    { "n": 17, "in": 75.0, "out": 82.0, "src_in": 0.0, "shot": "s009m",  "clip": "s009m_manju_clip_00015_.mp4", "territory": "both", "lines": ["vo06"] },
+    { "n": 18, "in": 82.0, "out": 88.0, "src_in": 0.0, "shot": "s002d",  "clip": "s002d_manju_clip_00018_.mp4", "territory": "both", "lines": [] },
+    { "n": 19, "in": 88.0, "out": 90.0, "src_in": 0.0, "shot": "s010m",  "clip": "s010m_manju_clip_00016_.mp4", "territory": "both", "lines": [] }
+  ]
+}

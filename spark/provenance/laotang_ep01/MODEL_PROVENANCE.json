@@ -1,0 +1,4132 @@
+{
+  "episode": "laotang_ep01",
+  "schema": 1,
+  "entries": [
+    {
+      "job_id": "f2fd82a529d54aa3",
+      "episode": "laotang_ep01",
+      "shot_id": "s001",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "61a33500-00ae-42f2-bc61-7469389fe911",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "61478865a4ab2d9851a1fe052ed3f1179ff896a897ea3e4b01ece2a2071208a3",
+      "blender_sha256": "43f9a80ef838dcb252fa64f67f3c5e54f3fcfabf788e8e69f7156e92f1360e4d",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00002_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "da2b62683f76e62addd8cf24be1cf658a87fbe240ca551b6a90cbee0b6ee4b93",
+          "bytes": 1275104
+        }
+      ],
+      "timestamp": "2026-11-13T11:20:58Z"
+    },
+    {
+      "job_id": "8a806ef7a105468b",
+      "episode": "laotang_ep01",
+      "shot_id": "s001b",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "35ee3139-a37e-4bc5-865e-83af3f3617a9",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "fab8054f116cd203a2fcf9aab26858089373c4ad42895b96b6f33e3528b0fd4c",
+      "blender_sha256": "43f9a80ef838dcb252fa64f67f3c5e54f3fcfabf788e8e69f7156e92f1360e4d",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00003_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "52f00ae21dd3b000e97efb24ce77bae3ebe6892013cce28222940db8d9f39f45",
+          "bytes": 1267958
+        }
+      ],
+      "timestamp": "2026-11-13T11:21:51Z"
+    },
+    {
+      "job_id": "fe7d19bd6a1e4065",
+      "episode": "laotang_ep01",
+      "shot_id": "s001c",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "6d3d3639-8620-4659-a694-d27cd1a75627",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "330ddd4c0181b5beb8559c8ed54d34aa1123eec632f7d8a6781349e3108fb8f1",
+      "blender_sha256": "43f9a80ef838dcb252fa64f67f3c5e54f3fcfabf788e8e69f7156e92f1360e4d",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00004_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "3db3fabece3f216fc9d6737bfcaacceae35e94a483d0b42d453cc2383350b4bd",
+          "bytes": 1233529
+        }
+      ],
+      "timestamp": "2026-11-13T11:22:20Z"
+    },
+    {
+      "job_id": "bdb12f9315bc470d",
+      "episode": "laotang_ep01",
+      "shot_id": "s002",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "cd9d723d-0465-4348-9788-f818f2c5c917",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "cb417f35254c13cc115568fc7585725a7075c874aecc0d852e4cf6be240923db",
+      "blender_sha256": "ccb069beb12d1bb243e24e0132742bac1ca638e5b9d58f14b2a0523f62a2afad",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00005_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "7e24b0731c4d3a98785a428acf2b1e3a7f36bc8b104ffabd5274a005b30da4b8",
+          "bytes": 1071510
+        }
+      ],
+      "timestamp": "2026-11-13T11:32:54Z"
+    },
+    {
+      "job_id": "00caf9fd9c8e4f9f",
+      "episode": "laotang_ep01",
+      "shot_id": "s003",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "ef03d5b2-8037-497e-a8f8-f1efee205184",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "7fec4e779ac7f01d821adf9ffa01799cb2a634332663a4c309960d47a79edcba",
+      "blender_sha256": "ccb069beb12d1bb243e24e0132742bac1ca638e5b9d58f14b2a0523f62a2afad",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00006_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "bedcb2b1a4d236659f22abcec90b3ff0d2aab60b242cfd609da1048c31c2ad76",
+          "bytes": 1130751
+        }
+      ],
+      "timestamp": "2026-11-13T11:33:02Z"
+    },
+    {
+      "job_id": "368232fcdf2c41ab",
+      "episode": "laotang_ep01",
+      "shot_id": "s004",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "2be94cde-004a-4bce-8235-edfaaa206664",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "3de897c6ee94d2d83baac70f71409434831aeab8e165434e43ae9206594cfacf",
+      "blender_sha256": "ccb069beb12d1bb243e24e0132742bac1ca638e5b9d58f14b2a0523f62a2afad",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00007_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "85719ff6eddcb18943e53c487bf97666be1d8ff65ff0207a5d9dee809a69dd78",
+          "bytes": 1083456
+        }
+      ],
+      "timestamp": "2026-11-13T11:33:11Z"
+    },
+    {
+      "job_id": "b26ceb013db04075",
+      "episode": "laotang_ep01",
+      "shot_id": "s005",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "04c69da3-cb8a-4d94-b365-d467f7160750",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "985185a586761b17da83fd3b68b0021ec2b73fe848e7275040b5290ed425a744",
+      "blender_sha256": "ccb069beb12d1bb243e24e0132742bac1ca638e5b9d58f14b2a0523f62a2afad",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00008_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "2562e95405a2326c3c17fbd858fb6a8c98286c2716953dcca85552d9ba871790",
+          "bytes": 989655
+        }
+      ],
+      "timestamp": "2026-11-13T11:33:20Z"
+    },
+    {
+      "job_id": "950bc450553f4c78",
+      "episode": "laotang_ep01",
+      "shot_id": "s006",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "e13ded1d-42f6-4d0d-87d0-c8c64cff5c0f",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "ceb62186f32c0598ce499de9be043501863b132910e974bb0682867ebcc2ab1e",
+      "blender_sha256": "ccb069beb12d1bb243e24e0132742bac1ca638e5b9d58f14b2a0523f62a2afad",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00009_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "e71e78b5968fc2b6420ae1019beb909c9ffb3f08e11f7be8ce128894b4f87335",
+          "bytes": 1145322
+        }
+      ],
+      "timestamp": "2026-11-13T11:33:29Z"
+    },
+    {
+      "job_id": "ea5226147eb9457b",
+      "episode": "laotang_ep01",
+      "shot_id": "s007",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "5740791e-ff33-4d18-bcd5-152f9013a674",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "8b1aba3a1a2148ea309410fbe8634d8517c402d579c2d9e0bd962c19196ffd74",
+      "blender_sha256": "ccb069beb12d1bb243e24e0132742bac1ca638e5b9d58f14b2a0523f62a2afad",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00010_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "3dfeb5a26b50013420439409d2ed584aba92a9c81c0dae4e9baae47279ab6fb1",
+          "bytes": 1096426
+        }
+      ],
+      "timestamp": "2026-11-13T11:33:37Z"
+    },
+    {
+      "job_id": "3f62af975e1540c9",
+      "episode": "laotang_ep01",
+      "shot_id": "s008",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "64a1f8db-9c51-4c57-8b03-c8b825cf5df1",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "029da5b82cdb987a0fde4eb4dec867d62ca8b27126f100afa4a91783fe7d6e47",
+      "blender_sha256": "ccb069beb12d1bb243e24e0132742bac1ca638e5b9d58f14b2a0523f62a2afad",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00011_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "8ab5f5dbf49e3c18ef270c449c9f688849f160e05d59950e7eee02224c8e16bf",
+          "bytes": 1295698
+        }
+      ],
+      "timestamp": "2026-11-13T11:33:46Z"
+    },
+    {
+      "job_id": "166562ea5586485e",
+      "episode": "laotang_ep01",
+      "shot_id": "s004b",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "cc7d9b7f-45ec-41a3-83e0-e0a8bede7017",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "18b7c6717d8d84b010cbdbc03e2151b0bacb00eb5a2573422b9b1f8fe14e90d4",
+      "blender_sha256": "ccb069beb12d1bb243e24e0132742bac1ca638e5b9d58f14b2a0523f62a2afad",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00012_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "af98445bb33486c33b87ce4001e5d26bf8c9481259e59df20c8128906f0e8183",
+          "bytes": 1075348
+        }
+      ],
+      "timestamp": "2026-11-13T11:34:29Z"
+    },
+    {
+      "job_id": "f75e64c9d3254091",
+      "episode": "laotang_ep01",
+      "shot_id": "s004c",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "7e9eb286-8a2d-45da-a512-e64cdb1df4f3",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "aa2de177dcbee9a3f9eb81b7cdaf438fc3e067a2c2f30a688989013a3bcb3f56",
+      "blender_sha256": "c236ae93268b2705ead7cc4a57c354ec9b1ddff4320eb16e5114fd69aebe46cf",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00013_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "594f2da3263160513c5d187806a0f0abce47f4974e3585e90021e2d7ed39c0e2",
+          "bytes": 1087751
+        }
+      ],
+      "timestamp": "2026-11-13T11:37:43Z"
+    },
+    {
+      "job_id": "48c11dd1b1154a21",
+      "episode": "laotang_ep01",
+      "shot_id": "s007b",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "d800365f-2222-4bce-bd05-bcddd7579bdf",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "1d727533d7aff9bdb1dd71dc7e8d73b8d0318de74178721e4c376532b2af5078",
+      "blender_sha256": "c236ae93268b2705ead7cc4a57c354ec9b1ddff4320eb16e5114fd69aebe46cf",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00014_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "3ecc3d6c8c727ce9dfb166a2bec6dfe0da28d9e23a2ffa1afbb5fcd64b469c76",
+          "bytes": 1141175
+        }
+      ],
+      "timestamp": "2026-11-13T11:37:52Z"
+    },
+    {
+      "job_id": "59def9875539453d",
+      "episode": "laotang_ep01",
+      "shot_id": "s007n",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "face2e2a-5280-4b5f-991f-ac766c7f5634",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "2a9d897959d6fb6ccf48e5092828bfa826fcec29e28c0b9b32d59cf7bc22ebd7",
+      "blender_sha256": "c236ae93268b2705ead7cc4a57c354ec9b1ddff4320eb16e5114fd69aebe46cf",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00015_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "bd42e41fd4235223a26e76725daba3a85e76a233db7ec24f354c3f205c4b91b6",
+          "bytes": 1143703
+        }
+      ],
+      "timestamp": "2026-11-13T11:38:21Z"
+    },
+    {
+      "job_id": "e31edadaa0aa410e",
+      "episode": "laotang_ep01",
+      "shot_id": "s004d",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "d15e41df-4087-46e5-a257-f843d605251e",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "496e7748ce166b0a18675a4abcaedd38f4cb55b3724cf114e1cf49a2900aeabe",
+      "blender_sha256": "c236ae93268b2705ead7cc4a57c354ec9b1ddff4320eb16e5114fd69aebe46cf",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00016_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "724047f917de8837e34d0cd649ae2732a3881ac3427751f03b9a99fb37442773",
+          "bytes": 1176358
+        }
+      ],
+      "timestamp": "2026-11-13T12:34:51Z"
+    },
+    {
+      "job_id": "9e1978c37a294637",
+      "episode": "laotang_ep01",
+      "shot_id": "s001m",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "bf441f57-e37b-4661-9b43-fc3d875322ab",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "bb48cb6a695aa5d6a0b26a99905e41f5bd354f1429956d32a1e47d70e1255212",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00001_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "5b667e14598b7214c8c13060e8441f0f6ba95f6b90d93f4c6cfe36dfe0d22df6",
+          "bytes": 1560176
+        }
+      ],
+      "timestamp": "2026-11-13T12:44:18Z"
+    },
+    {
+      "job_id": "d594e0ad5bd74587",
+      "episode": "laotang_ep01",
+      "shot_id": "s002m",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "b342ad7a-70ca-4db0-a62f-26bab8ecdbe3",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "5a4c3b1e32c8a0f0d2a058eaeca9dc580ff58c3d70dbfe14ea2ec843ba007ee2",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00002_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "400a03979f2791b3c3bf4f611b18a9217ee97d756eb321c60a6b15468c93f69a",
+          "bytes": 2097396
+        }
+      ],
+      "timestamp": "2026-11-13T14:23:41Z"
+    },
+    {
+      "job_id": "bc6dc498352b4fd6",
+      "episode": "laotang_ep01",
+      "shot_id": "s003m",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "c58a7abd-8bb3-45ca-b76a-25bb29f9706f",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "fbd9be0c7874e0aecb954bc93ac54d31896dff3717f1df43b9157b44b496affc",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00003_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "55a42be409a116a75cb33ae4bb503c6c471fe9a8c6992eb6f6424700c78e7417",
+          "bytes": 1589539
+        }
+      ],
+      "timestamp": "2026-11-13T14:30:45Z"
+    },
+    {
+      "job_id": "1a24458c7bbd42cc",
+      "episode": "laotang_ep01",
+      "shot_id": "s004em",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "ff73a8c2-f119-448c-9efd-8ceddb3a0c39",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "0f04c4b7c19e8e2b2d2b94fbe18a671c3550a391a732664eee2c4155aed44911",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00004_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "cd9de3c1c05afe4c6124a7f9e67a2abf4c585cbc7f2017874386ccf841c6c6d4",
+          "bytes": 1611489
+        }
+      ],
+      "timestamp": "2026-11-13T14:37:46Z"
+    },
+    {
+      "job_id": "a34057cda0ad4b5d",
+      "episode": "laotang_ep01",
+      "shot_id": "s005m",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "3a721556-a382-488f-8233-292d96d2602f",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "1d83b96238831b13aca69fc54f8cef6de78633cdbf6d05bda13a62eeafe988b2",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00005_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "8e8b291c7141de9483766ef6db68699a8d9f42610a2353614a2fbad20c7174b1",
+          "bytes": 822065
+        }
+      ],
+      "timestamp": "2026-11-13T14:44:48Z"
+    },
+    {
+      "job_id": "7cd2fbfb70cc48cb",
+      "episode": "laotang_ep01",
+      "shot_id": "s006m",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "f1da8678-c14e-4d8e-8655-239faf3bb862",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "a67700a402806703b7a543b86a9d5543d886cae9c15eb2396d5bffc91f9e6e44",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00006_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "1c73777788ccafcf3c3efb06903c58920d19a28d67f41303907caf587a589e4e",
+          "bytes": 1520507
+        }
+      ],
+      "timestamp": "2026-11-13T14:51:45Z"
+    },
+    {
+      "job_id": "f4607af8e1684dd6",
+      "episode": "laotang_ep01",
+      "shot_id": "s007bm",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "46269f2f-e943-47db-929d-811aa1ed54f1",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "bf11c194c16bf13b9147f46b3fe9cb48a83a458028073919f10ac4a32ee43883",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00007_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "2b7ee541fb226770c06f584d8db360807ea9c928e90f04035dc8e7e55dc7091c",
+          "bytes": 1761602
+        }
+      ],
+      "timestamp": "2026-11-13T14:58:48Z"
+    },
+    {
+      "job_id": "aad2ca4a9edd4cf0",
+      "episode": "laotang_ep01",
+      "shot_id": "s008m",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "5174fb67-1ab0-4502-ae93-5bbc2f7de738",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "a89b0df2f97bfb022c69dbc7350166fb318808278615352e48171b9d3c408f57",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00008_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "3bc5279e934a5aab849f1c5491ed1b2670fd13911231114853d71bb8f3bf9474",
+          "bytes": 2033592
+        }
+      ],
+      "timestamp": "2026-11-13T15:05:44Z"
+    },
+    {
+      "job_id": "62f82539bd0d45a7",
+      "episode": "laotang_ep01",
+      "shot_id": "s003b",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "5765228f-7141-4a37-a5db-d277caa14caa",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "4e40e090fa7424d7fa7036a5e3636fef06092d1e501859c3c84c2764a75bb47a",
+      "blender_sha256": "9296cc0e996367c01e2a505c1a6d13d795f2258e94250da37ec40861d6d326bb",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00017_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "3ed4f284bfd7a209991a02892536b7b9f544368ef7c8bcdbf48622f3bb9f4951",
+          "bytes": 1143462
+        }
+      ],
+      "timestamp": "2026-11-13T15:10:45Z"
+    },
+    {
+      "job_id": "84eb4060f8254b3e",
+      "episode": "laotang_ep01",
+      "shot_id": "s003m",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "27bb3493-05db-4bd1-b2be-45f29c95765f",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "b9e3e8647aa57c3b6fddb59a15e591842e03a638bc568d9429c722569e7949d8",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00009_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "3a7ae56b98a4528d1a9bc65127e4d4f341f0577ea7b94fa982c1b0d0953fb6ac",
+          "bytes": 1663547
+        }
+      ],
+      "timestamp": "2026-11-13T15:17:47Z"
+    },
+    {
+      "job_id": "d3d3a0afd1e44c2c",
+      "episode": "laotang_ep01",
+      "shot_id": "s002c",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "7c66577b-5c4c-42a0-ab65-b9386dd291e6",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "7b6bca77177f3f5cd35ff93a33b87121615329e94ba13c2ae980a82d088e3f19",
+      "blender_sha256": "9296cc0e996367c01e2a505c1a6d13d795f2258e94250da37ec40861d6d326bb",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00018_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "b1ca8e0e77f3c11fa916b0008b17450106fbe5f26ea5550ef47aebc146bdbb0a",
+          "bytes": 997645
+        }
+      ],
+      "timestamp": "2026-11-13T15:17:57Z"
+    },
+    {
+      "job_id": "29884c7ac03e4f7a",
+      "episode": "laotang_ep01",
+      "shot_id": "s004g",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "7d5d24ee-1641-4ecd-8759-8a2c242f1f02",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "a942137e33e0b877641d4005348a23db696c57c008a7f3bcb5f68130ec5a884c",
+      "blender_sha256": "9296cc0e996367c01e2a505c1a6d13d795f2258e94250da37ec40861d6d326bb",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00019_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "cc4c5ed5a36d350eb61661eeeb8141a25e936f755bfd48044332a3119fb19104",
+          "bytes": 1198949
+        }
+      ],
+      "timestamp": "2026-11-13T15:18:07Z"
+    },
+    {
+      "job_id": "213742089d0d4c8e",
+      "episode": "laotang_ep01",
+      "shot_id": "s004g",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "ee79d74d-cbc2-4978-84db-07aacfdd0f46",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "c171cd33ec342f00ad6a6c6cd01876f623be8e2d77fcc293e1ac1c1db5c7964d",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00010_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "379822bcbb074e6bc309b9c4b959a18c1039df9b6d3068f445e9095c40d1f507",
+          "bytes": 2253876
+        }
+      ],
+      "timestamp": "2026-11-13T15:25:47Z"
+    },
+    {
+      "job_id": "0a6abdfb45114420",
+      "episode": "laotang_ep01",
+      "shot_id": "s002c",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "ee291ccd-2ffe-489e-974e-469940b14281",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "897f071fa20fc09773a749d233c9d1cc632b9b3d041a2024a97fe921e1d371ef",
+      "blender_sha256": "9296cc0e996367c01e2a505c1a6d13d795f2258e94250da37ec40861d6d326bb",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00020_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "63c596a1c03a918426ba3239b606a21b1392ebe4c6d9cbd22959c1493670c95d",
+          "bytes": 1103711
+        }
+      ],
+      "timestamp": "2026-11-13T15:25:57Z"
+    },
+    {
+      "job_id": "551f8794bf2e408e",
+      "episode": "laotang_ep01",
+      "shot_id": "s002c",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "0d2e05a3-de5c-4599-b7b3-8813835aeaee",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "f93b21fbd16c61ca94d4af600720139c52f5cb36eb204eda496a6c3fc02f2bb3",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00011_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "39d7dda9906bf553cad9e0650f5eb893ed576bbc1b750ca2e485bca49a3d62a3",
+          "bytes": 2694597
+        }
+      ],
+      "timestamp": "2026-11-13T15:33:15Z"
+    },
+    {
+      "job_id": "2dde8d3139464a90",
+      "episode": "laotang_ep01",
+      "shot_id": "x001",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "951a8a41-bda3-4a87-9555-8c5cb5a19e51",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "6997fd1d5e778c0d1b7f944a2a02a90e22ada9f8fe908f2c1ea9dbe27d5d6369",
+      "blender_sha256": "587140220f7c955fa6da21312f30b46b303b572dd280fe561f9224483c889660",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00021_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "1a03c1e39ca71f285b73479465c4d63d5380aa215f6b8f355a609a3ba9fd9c06",
+          "bytes": 1295105
+        }
+      ],
+      "timestamp": "2026-11-13T15:33:26Z"
+    },
+    {
+      "job_id": "ba1f18dc2ba3416b",
+      "episode": "laotang_ep01",
+      "shot_id": "x002",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "16cdea48-f264-4bc9-9c20-7ba470f115e3",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "722025f147bf612696437ba7ba6b6fc94065afb656f4fe5bf964f1e19aafa8f2",
+      "blender_sha256": "587140220f7c955fa6da21312f30b46b303b572dd280fe561f9224483c889660",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00022_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "a192c8f2fc9d16c20c5d468f2c2a2b8d9cc44c885ae080ae848073694e202694",
+          "bytes": 1256167
+        }
+      ],
+      "timestamp": "2026-11-13T15:33:36Z"
+    },
+    {
+      "job_id": "ba6c858cbb0d480d",
+      "episode": "laotang_ep01",
+      "shot_id": "x003",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "07b853ba-3a8d-49ff-b046-f2e2e56052e8",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "33fd986e481069d1431746a71da16e5030e19178cc912888f9d500b51707e811",
+      "blender_sha256": "587140220f7c955fa6da21312f30b46b303b572dd280fe561f9224483c889660",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00023_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "6d86efa9098353819353de05cab4a66c23b1735180ca957ebd0da38badc67cc2",
+          "bytes": 976577
+        }
+      ],
+      "timestamp": "2026-11-13T15:33:46Z"
+    },
+    {
+      "job_id": "907d3b17acf94e1e",
+      "episode": "laotang_ep01",
+      "shot_id": "x002b",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "ac884005-c429-4b45-94ca-4d16ff757ac1",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "344baa3d8a1b999f36df200e5b820613ea93dd445a93c2547e84e9ecff397f43",
+      "blender_sha256": "587140220f7c955fa6da21312f30b46b303b572dd280fe561f9224483c889660",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00024_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "61078d9e6f88318bf4a86a98ad98dac615fde5f789794f9c1ca9093b62a6a9fe",
+          "bytes": 1237438
+        }
+      ],
+      "timestamp": "2026-11-13T15:34:32Z"
+    },
+    {
+      "job_id": "8c159a0168f24a89",
+      "episode": "laotang_ep01",
+      "shot_id": "x003b",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "948a932e-8c89-46d5-ae4c-4b8a84cb3ea1",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "acda3d80f9f98fa1a15a99355b54e44b54fc6c9e375e68d9e6449b30aee06c40",
+      "blender_sha256": "587140220f7c955fa6da21312f30b46b303b572dd280fe561f9224483c889660",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00025_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "5553d587cef378a79cef1be1c2f0f4bcc696c32bce8c258a1c8f673278c67999",
+          "bytes": 1106779
+        }
+      ],
+      "timestamp": "2026-11-13T15:34:42Z"
+    },
+    {
+      "job_id": "57506c21db1b4e07",
+      "episode": "laotang_ep01",
+      "shot_id": "x001",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "d06876aa-e329-421f-bcd4-58063f99e558",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "efb5e24ba914a80b70931708cb6577935036b3a8c70d3dcca297aa5384406d1a",
+      "blender_sha256": "587140220f7c955fa6da21312f30b46b303b572dd280fe561f9224483c889660",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00026_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "4725b9c2b76cbb97387a1319efd02c371f291b32331e62f6c4deaa56378d7956",
+          "bytes": 1188860
+        }
+      ],
+      "timestamp": "2026-11-13T15:35:11Z"
+    },
+    {
+      "job_id": "f8e96436fe5849ba",
+      "episode": "laotang_ep01",
+      "shot_id": "x002",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "ee2efe8c-fdbb-40c7-a8bc-1c5ac2d3ac08",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "261d945f6101f1d3789c38dfce790577c05d859517477ba55acae617f431d5a7",
+      "blender_sha256": "587140220f7c955fa6da21312f30b46b303b572dd280fe561f9224483c889660",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00027_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "23f2646bdef2ee3af1f305646c9b32fdffd203c2e1d6103aaf0f6db48b894bbd",
+          "bytes": 1182746
+        }
+      ],
+      "timestamp": "2026-11-13T15:35:21Z"
+    },
+    {
+      "job_id": "d63f32be13a94dd1",
+      "episode": "laotang_ep01",
+      "shot_id": "x003",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "7f2e9657-5cea-493a-8610-54b952c334bd",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "7cbb084cd2d6575a5b3dea2794b56df711a32f7dda9e9550b0c3c4dad49f2fb7",
+      "blender_sha256": "587140220f7c955fa6da21312f30b46b303b572dd280fe561f9224483c889660",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00028_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "dbfe5beece364e5d08b70a40c720ed70395d689b792dd13c59fb1a5e834e56e5",
+          "bytes": 1101374
+        }
+      ],
+      "timestamp": "2026-11-13T15:35:31Z"
+    },
+    {
+      "job_id": "a7eee67506534ccb",
+      "episode": "laotang_ep01",
+      "shot_id": "s009",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "42ea0a0e-c1d2-404a-83c3-19efece6f4cb",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "9868929aa3dcb5fe63f2699f619af566540fc6b32b1532d6dbdb3b3c1938da53",
+      "blender_sha256": "98b0b81b9d3c08a16a98ef67762b5776e7d873948cc399ad5aa8ffab779d30d6",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00029_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "fce7388cb7b9c66d477906b41f8a7c2e12ebd19ae5616de96e858be9c75c26de",
+          "bytes": 1057063
+        }
+      ],
+      "timestamp": "2026-11-13T15:35:41Z"
+    },
+    {
+      "job_id": "15f10544fef744c0",
+      "episode": "laotang_ep01",
+      "shot_id": "s010",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "dd79ce50-07d5-4959-8ae7-7cfd3a78a341",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "798a4c411a91b05c5ba9c78e32fd9f2c726c5a6f23ba6d616221d65c95a352ea",
+      "blender_sha256": "98b0b81b9d3c08a16a98ef67762b5776e7d873948cc399ad5aa8ffab779d30d6",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00030_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "e341a66cfe207e11c3f78f70960ebe9fc17a5f2ed533e649fe1dcd16285e1952",
+          "bytes": 1010628
+        }
+      ],
+      "timestamp": "2026-11-13T15:35:50Z"
+    },
+    {
+      "job_id": "17a9bdd618d24e9e",
+      "episode": "laotang_ep01",
+      "shot_id": "s011",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "60fbdcd2-f342-46aa-9436-72fe9e3f62a2",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "c5b57a961efd63f4d46922532ed315a11be5327d8044ccb798fa33d67a7cd7e9",
+      "blender_sha256": "98b0b81b9d3c08a16a98ef67762b5776e7d873948cc399ad5aa8ffab779d30d6",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00031_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "52ee94efe0732faf1a51369539d718e5623644a870e8da971a676ed8052fd223",
+          "bytes": 1030379
+        }
+      ],
+      "timestamp": "2026-11-13T15:36:00Z"
+    },
+    {
+      "job_id": "0dd1f681bab943b9",
+      "episode": "laotang_ep01",
+      "shot_id": "s012",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "7576c03d-4a3b-4d2e-902c-0ee19f9959ea",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "9255af9d1861a073c4725d9694c124eaddc6e3c149c795c623e7069c345120e1",
+      "blender_sha256": "98b0b81b9d3c08a16a98ef67762b5776e7d873948cc399ad5aa8ffab779d30d6",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00032_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "cd23b08a648c8921bf78cb0e3118e98012241ff70b558b8911e3f6e51ea40a21",
+          "bytes": 1332389
+        }
+      ],
+      "timestamp": "2026-11-13T15:36:10Z"
+    },
+    {
+      "job_id": "edbef5a9f7864ede",
+      "episode": "laotang_ep01",
+      "shot_id": "x001",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "3ae4ee6d-6747-4a64-a6a3-5390171deae8",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "87cad4604ad2912bc16eb789d8e7d61135459de6f55adba0fb9bf16241722d6d",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00012_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "97da68df6cdaa6248245ec9bdc84c0e416a0e9b72eb689ea7ae43df3b2b6f400",
+          "bytes": 2225513
+        }
+      ],
+      "timestamp": "2026-11-13T15:43:05Z"
+    },
+    {
+      "job_id": "f935f5523b384836",
+      "episode": "laotang_ep01",
+      "shot_id": "s009",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "6476c164-828a-4c31-9cf1-9452cbbe57cc",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "a570a8d69366a04ccf0efdf7c443eee102528a6ff39683cc2323e036da127b26",
+      "blender_sha256": "98b0b81b9d3c08a16a98ef67762b5776e7d873948cc399ad5aa8ffab779d30d6",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00033_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "625e5d5b353fc0cda0b0310800e34237c94925ccd52334bb6ff669fcf2d7f16d",
+          "bytes": 1039028
+        }
+      ],
+      "timestamp": "2026-11-13T15:43:16Z"
+    },
+    {
+      "job_id": "9254de0cff8144a4",
+      "episode": "laotang_ep01",
+      "shot_id": "x002",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "189b6e2c-9e37-4c52-a130-ecd1e244fc0b",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "352a7ef4ecfdc2ef829a41ab2ff7f10c3e885788187f7948712de38955c16b34",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00013_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "074f22c6cb534e2a7d1bf88dbaa46a50720ce2318da7e1a293b436a690217447",
+          "bytes": 1259673
+        }
+      ],
+      "timestamp": "2026-11-13T15:50:09Z"
+    },
+    {
+      "job_id": "00637eec47414f02",
+      "episode": "laotang_ep01",
+      "shot_id": "s010",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "34789f15-b9f1-425e-b2bf-8565e8aeacd9",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "f840fe505d8302fc1dd8cfec5fba62c484da60a7a5d5dc3c4df121406e16a8ec",
+      "blender_sha256": "2868ab3a9468c0404d20fda1a5d5a2e28865c62ffdaa878af3470c46b02bf900",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00034_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "e46f4cd14fa88abaffcbb7cd9a1632b1d971d83de4c7b49e9a775651e1acdd30",
+          "bytes": 1054300
+        }
+      ],
+      "timestamp": "2026-11-13T15:50:19Z"
+    },
+    {
+      "job_id": "0cf23ed95c694b04",
+      "episode": "laotang_ep01",
+      "shot_id": "x003",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "2488555c-10b6-444f-a516-2127e6f12fe7",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "1967a949bb9e76284a8f52694267b3008659932fca10281c23e79c3bba99f877",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00014_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "cced40d2af2569d1da2209ab57f2ff668a082b30c77c3b8d00f2538cdfe475ea",
+          "bytes": 1855428
+        }
+      ],
+      "timestamp": "2026-11-13T15:57:12Z"
+    },
+    {
+      "job_id": "043b12e6682848e7",
+      "episode": "laotang_ep01",
+      "shot_id": "s009b",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "bd3d4543-0ac2-4097-8fe6-b2a9b46f82af",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "ec23b8cf3b93e4de7bd155d51d7b2214bf764ed379914ca541d3fef4c6c8f6d0",
+      "blender_sha256": "2868ab3a9468c0404d20fda1a5d5a2e28865c62ffdaa878af3470c46b02bf900",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00035_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "b6efc67fb864f2848bfaee105d4084eea9739e1a8e97e89c83d0690eae39efd9",
+          "bytes": 1015319
+        }
+      ],
+      "timestamp": "2026-11-13T15:57:22Z"
+    },
+    {
+      "job_id": "34c2386097dc4db7",
+      "episode": "laotang_ep01",
+      "shot_id": "s010c",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "5a977095-3c03-41a7-8168-8b229593bdf5",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "b7ae7c4b95a75f731a038849f1219b5246fb507dddb255530abe7ef59d3927df",
+      "blender_sha256": "1b9274777296f1adb1957c506946f0487f55325dbb0fe81d7df6ffed18494e1d",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00036_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "4208e97c926d7e24e2edfef227e9809aa779429385e3ba55d0474ee46f8f7777",
+          "bytes": 1037345
+        }
+      ],
+      "timestamp": "2026-11-13T16:10:53Z"
+    },
+    {
+      "job_id": "0c54056094f34957",
+      "episode": "laotang_ep01",
+      "shot_id": "s009c",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "a59e1ec5-168b-47e7-81ee-ae9f48f1973c",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "be91a0c2dbb5be7e03fca930f26e2f7cab872dcfe0c0b835480aa3f5e5264ddb",
+      "blender_sha256": "1b9274777296f1adb1957c506946f0487f55325dbb0fe81d7df6ffed18494e1d",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00037_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "a804cae9828faf4110229539575eb63c9e928d3d6fb324695d229b4c0ac2baa7",
+          "bytes": 975584
+        }
+      ],
+      "timestamp": "2026-11-13T16:11:15Z"
+    },
+    {
+      "job_id": "0b19e157254e4070",
+      "episode": "laotang_ep01",
+      "shot_id": "s009m",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "b61de927-3d46-4d36-a02e-a83c8e5944d1",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "78043ff8eb19bf0223a632e25294e002bcf3bb5b5615bebb92948921fca03fe0",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00015_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "7823036783b2565297775ea44806c0566a449c5ee000d91cafa4e7d5b21555e5",
+          "bytes": 2002219
+        }
+      ],
+      "timestamp": "2026-11-13T16:18:31Z"
+    },
+    {
+      "job_id": "0d1e7d104a664ddd",
+      "episode": "laotang_ep01",
+      "shot_id": "s011b",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "0b988c6b-712d-4283-8d05-0f0307be0324",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "c1ffe29433fcfdb35b6cd874f4ffc0fe1811b184ebee176ad58756e0443a1838",
+      "blender_sha256": "1b9274777296f1adb1957c506946f0487f55325dbb0fe81d7df6ffed18494e1d",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00038_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "d9006787161a74b4cab1ef6f9333742695df8a7ca775cd7e72057d058f706a5a",
+          "bytes": 1094578
+        }
+      ],
+      "timestamp": "2026-11-13T16:18:41Z"
+    },
+    {
+      "job_id": "a86fe9efffa34f63",
+      "episode": "laotang_ep01",
+      "shot_id": "s010m",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "14a7e275-bb83-42a8-bc33-b46add5d85f8",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "d342239fbce996409b521d700612f5409d5c29379331ddfa2b18680c9ffc1439",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00016_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "a45a40d185949dc94b1603ae614395461a089c318707f549beb107dceefe70a1",
+          "bytes": 1680455
+        }
+      ],
+      "timestamp": "2026-11-13T16:25:27Z"
+    },
+    {
+      "job_id": "c11e2f959cfb432f",
+      "episode": "laotang_ep01",
+      "shot_id": "s011c",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "e5bc9962-411c-486d-ba50-7199b349349c",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "807966cc08419eb13dc520556e1e33b7e16c17d414aa8db3ab90f551ded87db0",
+      "blender_sha256": "1b9274777296f1adb1957c506946f0487f55325dbb0fe81d7df6ffed18494e1d",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00039_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "3b2ab7630b040957fdaf854c65c46fbb65791880da21d9a20abf17f7a913d28d",
+          "bytes": 1007410
+        }
+      ],
+      "timestamp": "2026-11-13T16:25:38Z"
+    },
+    {
+      "job_id": "f1bc5b53494a4803",
+      "episode": "laotang_ep01",
+      "shot_id": "s011m",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "eb5d6167-4b35-47a1-aa17-531ca4bed49f",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "2d7a0ab1f5383f5f81d7ae6dca303996de6fbff6a17246bc85affabcbddfb4bb",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00017_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "a6ce369cabb1b11ded3032ddddfb5b24a2295e291ca15ba660b52a82715ba694",
+          "bytes": 1955723
+        }
+      ],
+      "timestamp": "2026-11-13T16:33:35Z"
+    },
+    {
+      "job_id": "f49376b79caa485c",
+      "episode": "laotang_ep01",
+      "shot_id": "s002d",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "d7fa0fc1-244d-4fe5-a092-830f964effe8",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "297f5623410a37f208e035215eec41a8157d72036b24b87317398f1a5bbb63b0",
+      "blender_sha256": "1b9274777296f1adb1957c506946f0487f55325dbb0fe81d7df6ffed18494e1d",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00040_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "292c0570527d92f17c8009838bdab3097e2c9cf5fca20dd56141a38d63806506",
+          "bytes": 1074997
+        }
+      ],
+      "timestamp": "2026-11-13T16:33:46Z"
+    },
+    {
+      "job_id": "e83da27170954b46",
+      "episode": "laotang_ep01",
+      "shot_id": "s002e",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "772b2fe9-eb3e-424f-a17b-934f0e02281c",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "5b58b7cdab2ac39396528b23fa73fde2d90fe1cff36e0344c71b90759a2f0f3a",
+      "blender_sha256": "1b9274777296f1adb1957c506946f0487f55325dbb0fe81d7df6ffed18494e1d",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00041_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "e2a4a686702e4d972fe8dce6e595bca5bb63deac914ee1fd552892f4b731f421",
+          "bytes": 1210381
+        }
+      ],
+      "timestamp": "2026-11-13T16:34:11Z"
+    },
+    {
+      "job_id": "fd99c5ad10fe40c7",
+      "episode": "laotang_ep01",
+      "shot_id": "s002d",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "eb4d4561-ec3d-4fda-b3b7-09cf670cc026",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "8557c0160c9193b5557646a17c03a2e3d306abbe12244ad9dce1a991c94f2985",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00018_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "f6e1af69edc48cbe1d1a68742789cea77f6b62c80a17eb1b1d6e4d8e6153f008",
+          "bytes": 1520523
+        }
+      ],
+      "timestamp": "2026-11-13T16:41:52Z"
+    },
+    {
+      "job_id": "8bbaeff3d7c54419",
+      "episode": "laotang_ep01",
+      "shot_id": "s012b",
+      "lane": "zimage-turbo",
+      "territory": "both",
+      "prompt_id": "bc3342ad-b5c5-4e38-bb0d-b12870671602",
+      "models": [
+        {
+          "id": "z_image_turbo_int8_convrot",
+          "name": "z_image_turbo_int8_convrot.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "int8_convrot",
+          "sha256": "be517ebd47c912a5626a588e1aeea43e6be4a43c0cdcd2b48a2a780d9f358635"
+        },
+        {
+          "id": "qwen_3_4b_fp8_mixed",
+          "name": "qwen_3_4b_fp8_mixed.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp8_mixed",
+          "sha256": "72450b19758172c5a7273cf7de729d1c17e7f434a104a00167624cba94f68f15"
+        },
+        {
+          "id": "ae",
+          "name": "ae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Tongyi-MAI/Z-Image/main/LICENSE",
+          "quantisation": "fp32",
+          "sha256": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38"
+        },
+        {
+          "id": "z_image_turbo_fun_controlnet_2_1_lite",
+          "name": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-lite-2602-8steps.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/aigc-apps/VideoX-Fun/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "3ea098db9bd145be525c7e2366920b6d76c5ffd46b3d7aa8169bbc943fdaee35"
+        }
+      ],
+      "sampler": "res_multistep/simple",
+      "steps": 8,
+      "cfg": 1.0,
+      "seed": 420261113,
+      "workflow_sha256": "7df96ed626adf9dca4cefeddfc2b34329a63acf4dadb85393a7c52e76bb8633e",
+      "blender_sha256": "1b9274777296f1adb1957c506946f0487f55325dbb0fe81d7df6ffed18494e1d",
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "9",
+          "kind": "images",
+          "filename": "manju_keyframe_00042_.png",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "87db543c528cf00ea912fdaa82e57030286ac966b0f0acae898674ac9bc3fc51",
+          "bytes": 1133559
+        }
+      ],
+      "timestamp": "2026-11-13T16:42:03Z"
+    },
+    {
+      "job_id": "c97d8a14342e45af",
+      "episode": "laotang_ep01",
+      "shot_id": "s012m",
+      "lane": "wan-i2v",
+      "territory": "both",
+      "prompt_id": "a6c7d08c-e0f1-4bd4-af43-434f89a9d017",
+      "models": [
+        {
+          "id": "wan2.2_ti2v_5B_fp16",
+          "name": "wan2.2_ti2v_5B_fp16.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "456f901338bd9eadbded3828b819109a9b68e8a525ca5cf8d0049a69fcfeca1e"
+        },
+        {
+          "id": "wan_umt5_xxl_fp8_e4m3fn_scaled",
+          "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp8_e4m3fn_scaled",
+          "sha256": "c3355d30191f1f066b26d93fba017ae9809dce6c627dda5f6a66eaa651204f68"
+        },
+        {
+          "id": "wan2.2_vae",
+          "name": "wan2.2_vae.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://raw.githubusercontent.com/Wan-Video/Wan2.2/main/LICENSE.txt",
+          "quantisation": "fp16",
+          "sha256": "e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156"
+        }
+      ],
+      "sampler": "uni_pc/simple",
+      "steps": 30,
+      "cfg": 5.0,
+      "seed": 420261113,
+      "workflow_sha256": "051cb755048ac62eea3acdb5cbd84fe95c217a3d02500f8b88d9e2f7bb71adbc",
+      "blender_sha256": null,
+      "engine_version": {
+        "comfyui": "b894a86",
+        "torch": "2.14.1+cu130",
+        "sageattention": "2.2.0"
+      },
+      "outputs": [
+        {
+          "node_id": "47",
+          "kind": "images",
+          "filename": "manju_clip_00019_.mp4",
+          "subfolder": "",
+          "type": "output",
+          "sha256": "808857c38b23acc609595887e08282c5f38f05d7ed17563ac744299581f2d173",
+          "bytes": 1210997
+        }
+      ],
+      "timestamp": "2026-11-13T16:49:21Z"
+    },
+    {
+      "job_id": "3ba67b9c851b4539",
+      "episode": "laotang_ep01",
+      "shot_id": "vo01",
+      "lane": "tts",
+      "territory": "both",
+      "prompt_id": "3ba67b9c851b4539",
+      "models": [
+        {
+          "id": "qwen3_tts_voicedesign_1_7b",
+          "name": "model.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522"
+        },
+        {
+          "id": "qwen3_tts_voicedesign_1_7b_speech_tokenizer",
+          "name": "speech_tokenizer/model.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+        }
+      ],
+      "sampler": "qwen3-tts-voice-design",
+      "steps": null,
+      "cfg": null,
+      "seed": 410001,
+      "workflow_sha256": "b7aa9e8760a47e612ef451955a77cb4e783053eeb48dcc370e2954096085242f",
+      "blender_sha256": null,
+      "engine_version": {
+        "qwen_tts": "0.1.1",
+        "transformers": "4.57.3",
+        "torch": "2.14.1+cu130",
+        "device": "NVIDIA GB10"
+      },
+      "speaker": "\u82cf\u5ff5",
+      "text": "\u6211\u5988\u7559\u7ed9\u6211\u7684\uff0c\u53ea\u6709\u8fd9\u9505\u6c64\u3002",
+      "instruct": "\u4e8c\u5341\u591a\u5c81\u7684\u5e74\u8f7b\u5973\u6027\uff0c\u58f0\u97f3\u4f4e\u6c89\u5e73\u9759\uff0c\u5e26\u4e00\u70b9\u75b2\u60eb\uff0c\u50cf\u5728\u4f4e\u58f0\u56de\u5fc6\uff0c\u8bed\u901f\u6162\uff0c\u4e0d\u8981\u64ad\u97f3\u8154\uff0c\u4e0d\u8981\u8868\u6f14\u611f\uff0c\u63a5\u8fd1\u8033\u8bed\u4f46\u6e05\u6670\u3002",
+      "params": {
+        "do_sample": true,
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "top_k": 50,
+        "repetition_penalty": 1.05,
+        "max_new_tokens": 4096
+      },
+      "outputs": [
+        {
+          "node_id": "0",
+          "kind": "audio",
+          "filename": "vo01_sunian_vo.wav",
+          "subfolder": "vo",
+          "type": "output",
+          "sha256": "54a1f1e0289463cecb75b1d327880778bcd46aa8c1a3aec2bed4e35ff630a858",
+          "bytes": 149804,
+          "sample_rate": 24000,
+          "seconds": 3.12
+        }
+      ],
+      "timestamp": "2026-11-14T01:34:17Z"
+    },
+    {
+      "job_id": "928912398b3e4a86",
+      "episode": "laotang_ep01",
+      "shot_id": "vo02",
+      "lane": "tts",
+      "territory": "both",
+      "prompt_id": "928912398b3e4a86",
+      "models": [
+        {
+          "id": "qwen3_tts_voicedesign_1_7b",
+          "name": "model.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522"
+        },
+        {
+          "id": "qwen3_tts_voicedesign_1_7b_speech_tokenizer",
+          "name": "speech_tokenizer/model.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+        }
+      ],
+      "sampler": "qwen3-tts-voice-design",
+      "steps": null,
+      "cfg": null,
+      "seed": 410002,
+      "workflow_sha256": "0ffef96369d16775f4e28ca18b037b3a2bd36aca1c2e8a7a9764aba8aaa9f32c",
+      "blender_sha256": null,
+      "engine_version": {
+        "qwen_tts": "0.1.1",
+        "transformers": "4.57.3",
+        "torch": "2.14.1+cu130",
+        "device": "NVIDIA GB10"
+      },
+      "speaker": "\u82cf\u5efa\u56fd",
+      "text": "\u8fd9\u5e97\uff0c\u4ece\u4eca\u5929\u8d77\u4e0d\u59d3\u4f60\u3002",
+      "instruct": "\u4e94\u5341\u591a\u5c81\u7684\u7537\u6027\uff0c\u55d3\u97f3\u6c99\u54d1\u539a\u91cd\uff0c\u5e26\u4e00\u70b9\u5357\u65b9\u53e3\u97f3\uff0c\u8bed\u6c14\u5f3a\u786c\u538b\u7740\u706b\u6c14\uff0c\u8bed\u901f\u6162\uff0c\u54ac\u5b57\u91cd\uff0c\u4e0d\u543c\u3002",
+      "params": {
+        "do_sample": true,
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "top_k": 50,
+        "repetition_penalty": 1.05,
+        "max_new_tokens": 4096
+      },
+      "outputs": [
+        {
+          "node_id": "0",
+          "kind": "audio",
+          "filename": "vo02_sujianguo.wav",
+          "subfolder": "vo",
+          "type": "output",
+          "sha256": "a9eed5e4ba4ed982e348879e9b780fce639de81d57fc764020ae9079085e58db",
+          "bytes": 211244,
+          "sample_rate": 24000,
+          "seconds": 4.4
+        }
+      ],
+      "timestamp": "2026-11-14T01:34:20Z"
+    },
+    {
+      "job_id": "4946e66b1d7c4c53",
+      "episode": "laotang_ep01",
+      "shot_id": "vo04",
+      "lane": "tts",
+      "territory": "both",
+      "prompt_id": "4946e66b1d7c4c53",
+      "models": [
+        {
+          "id": "qwen3_tts_voicedesign_1_7b",
+          "name": "model.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522"
+        },
+        {
+          "id": "qwen3_tts_voicedesign_1_7b_speech_tokenizer",
+          "name": "speech_tokenizer/model.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+        }
+      ],
+      "sampler": "qwen3-tts-voice-design",
+      "steps": null,
+      "cfg": null,
+      "seed": 410004,
+      "workflow_sha256": "307862e4bb26db2b483098d19b21c6a60f8bd3e91c302c8a43310c03db04a426",
+      "blender_sha256": null,
+      "engine_version": {
+        "qwen_tts": "0.1.1",
+        "transformers": "4.57.3",
+        "torch": "2.14.1+cu130",
+        "device": "NVIDIA GB10"
+      },
+      "speaker": "\u5c0f\u6ee1",
+      "text": "\u59d0\uff0c\u4eca\u665a\u5403\u4ec0\u4e48\uff1f",
+      "instruct": "\u4e03\u516b\u5c81\u7684\u5c0f\u5973\u5b69\uff0c\u58f0\u97f3\u6e05\u8106\u7a1a\u5ae9\uff0c\u8bed\u6c14\u5929\u771f\u597d\u5947\uff0c\u8bed\u901f\u7a0d\u5feb\uff0c\u97f3\u91cf\u504f\u5c0f\u50cf\u4ece\u95e8\u5916\u4f20\u6765\u3002",
+      "params": {
+        "do_sample": true,
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "top_k": 50,
+        "repetition_penalty": 1.05,
+        "max_new_tokens": 4096
+      },
+      "outputs": [
+        {
+          "node_id": "0",
+          "kind": "audio",
+          "filename": "vo04_xiaoman.wav",
+          "subfolder": "vo",
+          "type": "output",
+          "sha256": "0a3aed8cfe505deb967a927b3a370233619a43212021690e8f6dd650e4245434",
+          "bytes": 73004,
+          "sample_rate": 24000,
+          "seconds": 1.52
+        }
+      ],
+      "timestamp": "2026-11-14T01:34:22Z"
+    },
+    {
+      "job_id": "553e8e4fa5714253",
+      "episode": "laotang_ep01",
+      "shot_id": "vo03",
+      "lane": "tts",
+      "territory": "both",
+      "prompt_id": "553e8e4fa5714253",
+      "models": [
+        {
+          "id": "qwen3_tts_voicedesign_1_7b",
+          "name": "model.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522"
+        },
+        {
+          "id": "qwen3_tts_voicedesign_1_7b_speech_tokenizer",
+          "name": "speech_tokenizer/model.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+        }
+      ],
+      "sampler": "qwen3-tts-voice-design",
+      "steps": null,
+      "cfg": null,
+      "seed": 410001,
+      "workflow_sha256": "04adf00e0d1800b34a3611b101f539b278adb9d9798de936aa33deec14b9e805",
+      "blender_sha256": null,
+      "engine_version": {
+        "qwen_tts": "0.1.1",
+        "transformers": "4.57.3",
+        "torch": "2.14.1+cu130",
+        "device": "NVIDIA GB10"
+      },
+      "speaker": "\u82cf\u5ff5",
+      "text": "\u9505\uff0c\u6211\u62ff\u8d70\u3002",
+      "instruct": "\u4e8c\u5341\u591a\u5c81\u7684\u5e74\u8f7b\u5973\u6027\uff0c\u58f0\u7ebf\u4f4e\u6c89\u5e73\u9759\uff0c\u548c\u65c1\u767d\u662f\u540c\u4e00\u4e2a\u4eba\uff0c\u504f\u51b7\u3001\u514b\u5236\uff0c\u5e26\u4e00\u70b9\u5014\u5f3a\uff0c\u8bed\u901f\u4e2d\u7b49\u504f\u6162\uff0c\u60c5\u7eea\u6536\u7740\uff0c\u4e0d\u558a\u4e0d\u54ed\uff0c\u4e0d\u8981\u64ad\u97f3\u8154\uff0c\u4e0d\u8981\u63d0\u9ad8\u97f3\u8c03\u3002",
+      "params": {
+        "do_sample": true,
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "top_k": 50,
+        "repetition_penalty": 1.05,
+        "max_new_tokens": 4096
+      },
+      "outputs": [
+        {
+          "node_id": "0",
+          "kind": "audio",
+          "filename": "vo03_sunian_line.wav",
+          "subfolder": "vo",
+          "type": "output",
+          "sha256": "b8557952feaf55186ea98fe06f89573abef48efb16d27ebf43aa513cb09bf3e7",
+          "bytes": 92204,
+          "sample_rate": 24000,
+          "seconds": 1.92
+        }
+      ],
+      "timestamp": "2026-11-14T02:12:38Z"
+    },
+    {
+      "job_id": "6a86b3a4e01d4128",
+      "episode": "laotang_ep01",
+      "shot_id": "vo05",
+      "lane": "tts",
+      "territory": "both",
+      "prompt_id": "6a86b3a4e01d4128",
+      "models": [
+        {
+          "id": "qwen3_tts_voicedesign_1_7b",
+          "name": "model.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522"
+        },
+        {
+          "id": "qwen3_tts_voicedesign_1_7b_speech_tokenizer",
+          "name": "speech_tokenizer/model.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+        }
+      ],
+      "sampler": "qwen3-tts-voice-design",
+      "steps": null,
+      "cfg": null,
+      "seed": 410001,
+      "workflow_sha256": "5e92a0021861e98aa95a16051a44bd88106fd3f499df875c451f64488e3c53d9",
+      "blender_sha256": null,
+      "engine_version": {
+        "qwen_tts": "0.1.1",
+        "transformers": "4.57.3",
+        "torch": "2.14.1+cu130",
+        "device": "NVIDIA GB10"
+      },
+      "speaker": "\u82cf\u5ff5",
+      "text": "\u706b\u9505\u3002",
+      "instruct": "\u4e8c\u5341\u591a\u5c81\u7684\u5e74\u8f7b\u5973\u6027\uff0c\u58f0\u7ebf\u4f4e\u6c89\u5e73\u9759\uff0c\u548c\u65c1\u767d\u662f\u540c\u4e00\u4e2a\u4eba\uff0c\u504f\u51b7\u3001\u514b\u5236\uff0c\u5e26\u4e00\u70b9\u75b2\u60eb\u7684\u6e29\u67d4\uff0c\u8bed\u901f\u6162\uff0c\u4e0d\u8981\u62d6\u8154\uff0c\u4e0d\u8981\u63d0\u9ad8\u97f3\u8c03\u3002",
+      "params": {
+        "do_sample": true,
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "top_k": 50,
+        "repetition_penalty": 1.05,
+        "max_new_tokens": 4096
+      },
+      "outputs": [
+        {
+          "node_id": "0",
+          "kind": "audio",
+          "filename": "vo05_sunian_huoguo.wav",
+          "subfolder": "vo",
+          "type": "output",
+          "sha256": "0515e80f61ba6f12f04c5bdead5b4b8e4811574fc63e134b28dbf3b33b919c90",
+          "bytes": 49964,
+          "sample_rate": 24000,
+          "seconds": 1.04
+        }
+      ],
+      "timestamp": "2026-11-14T02:12:38Z"
+    },
+    {
+      "job_id": "690c5d3bb0324118",
+      "episode": "laotang_ep01",
+      "shot_id": "vo06",
+      "lane": "tts",
+      "territory": "both",
+      "prompt_id": "690c5d3bb0324118",
+      "models": [
+        {
+          "id": "qwen3_tts_voicedesign_1_7b",
+          "name": "model.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522"
+        },
+        {
+          "id": "qwen3_tts_voicedesign_1_7b_speech_tokenizer",
+          "name": "speech_tokenizer/model.safetensors",
+          "spdx": "Apache-2.0",
+          "license_url": "https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE",
+          "quantisation": "bf16",
+          "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+        }
+      ],
+      "sampler": "qwen3-tts-voice-design",
+      "steps": null,
+      "cfg": null,
+      "seed": 410006,
+      "workflow_sha256": "0d7a7810950e1cd3e89e38e1632b3fa762faa4b30e40c1ccc5633d2afdf27a2b",
+      "blender_sha256": null,
+      "engine_version": {
+        "qwen_tts": "0.1.1",
+        "transformers": "4.57.3",
+        "torch": "2.14.1+cu130",
+        "device": "NVIDIA GB10"
+      },
+      "speaker": "\u987e\u884d",
+      "text": "\u8fd9\u9505\u6c64\uff0c\u6211\u627e\u4e86\u5341\u4e94\u5e74\u3002",
+      "instruct": "\u4e09\u5341\u5c81\u51fa\u5934\u7684\u7537\u6027\uff0c\u6210\u5e74\u7537\u6027\u7684\u81ea\u7136\u4e2d\u4f4e\u97f3\uff0c\u97f3\u9ad8\u6b63\u5e38\u4e0d\u538b\u4f4e\uff0c\u58f0\u97f3\u5b89\u9759\u5e72\u51c0\uff0c\u51e0\u4e4e\u6ca1\u6709\u8d77\u4f0f\uff0c\u514b\u5236\u800c\u75b2\u60eb\uff0c\u8bed\u901f\u6162\uff0c\u4e0d\u8868\u6f14\uff0c\u4e0d\u8981\u6c14\u6ce1\u97f3\u3002",
+      "params": {
+        "do_sample": true,
+        "temperature": 0.9,
+        "top_p": 1.0,
+        "top_k": 50,
+        "repetition_penalty": 1.05,
+        "max_new_tokens": 4096
+      },
+      "outputs": [
+        {
+          "node_id": "0",
+          "kind": "audio",
+          "filename": "vo06_guyan.wav",
+          "subfolder": "vo",
+          "type": "output",
+          "sha256": "cff33cb90f95604ebd0d67d60745b45ac1f45f914f0836cbe3990e864260e7e3",
+          "bytes": 115244,
+          "sample_rate": 24000,
+          "seconds": 2.4
+        }
+      ],
+      "timestamp": "2026-11-14T02:17:14Z"
+    }
+  ]
+}

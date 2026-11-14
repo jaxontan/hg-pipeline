@@ -1,0 +1,94 @@
+{
+  "episode": "laotang_ep01",
+  "model_id": "qwen3_tts_voicedesign_1_7b",
+  "source": "work/story/shotlist_laotang_ep01.md - Audio map (for Phase 4)",
+  "note": "Six utterances over five time slots. 苏念 appears three times: narration (vo01), her own line (vo03) and one word of dialogue (vo05). vo01 and vo03 are deliberately different presets - the shotlist says the VO and the dialogue are the same voice with different delivery, so the instruct text differs while the speaker is the same. Text must match the shotlist table character for character; target_seconds comes from the slot window and is a check, not a trim instruction.",
+  "generation": {
+    "do_sample": true,
+    "temperature": 0.9,
+    "top_p": 1.0,
+    "top_k": 50,
+    "repetition_penalty": 1.05,
+    "max_new_tokens": 4096
+  },
+  "lines": [
+    {
+      "id": "vo01",
+      "slug": "sunian_vo",
+      "speaker": "苏念",
+      "role": "voice-over, units 1-2",
+      "window": [0.0, 7.5],
+      "target_seconds": 7.5,
+      "language": "Chinese",
+      "seed": 410001,
+      "territory": "both",
+      "instruct": "二十多岁的年轻女性，声音低沉平静，带一点疲惫，像在低声回忆，语速慢，不要播音腔，不要表演感，接近耳语但清晰。",
+      "text": "我妈留给我的，只有这锅汤。"
+    },
+    {
+      "id": "vo02",
+      "slug": "sujianguo",
+      "speaker": "苏建国",
+      "role": "dialogue, unit 4",
+      "window": [11.0, 16.5],
+      "target_seconds": 5.5,
+      "language": "Chinese",
+      "seed": 410002,
+      "territory": "both",
+      "instruct": "五十多岁的男性，嗓音沙哑厚重，带一点南方口音，语气强硬压着火气，语速慢，咬字重，不吼。",
+      "text": "这店，从今天起不姓你。"
+    },
+    {
+      "id": "vo03",
+      "slug": "sunian_line",
+      "speaker": "苏念",
+      "role": "dialogue, unit 9",
+      "window": [33.0, 38.0],
+      "target_seconds": 5.0,
+      "language": "Chinese",
+      "seed": 410001,
+      "territory": "both",
+      "instruct": "二十多岁的年轻女性，声线低沉平静，和旁白是同一个人，偏冷、克制，带一点倔强，语速中等偏慢，情绪收着，不喊不哭，不要播音腔，不要提高音调。",
+      "text": "锅，我拿走。"
+    },
+    {
+      "id": "vo04",
+      "slug": "xiaoman",
+      "speaker": "小满",
+      "role": "off-screen dialogue, unit 13",
+      "window": [56.0, 57.8],
+      "target_seconds": 1.8,
+      "language": "Chinese",
+      "seed": 410004,
+      "territory": "both",
+      "instruct": "七八岁的小女孩，声音清脆稚嫩，语气天真好奇，语速稍快，音量偏小像从门外传来。",
+      "text": "姐，今晚吃什么？"
+    },
+    {
+      "id": "vo05",
+      "slug": "sunian_huoguo",
+      "speaker": "苏念",
+      "role": "dialogue, unit 13",
+      "window": [57.9, 59.0],
+      "target_seconds": 0.9,
+      "language": "Chinese",
+      "seed": 410001,
+      "territory": "both",
+      "instruct": "二十多岁的年轻女性，声线低沉平静，和旁白是同一个人，偏冷、克制，带一点疲惫的温柔，语速慢，不要拖腔，不要提高音调。",
+      "text": "火锅。"
+    },
+    {
+      "id": "vo06",
+      "slug": "guyan",
+      "speaker": "顾衍",
+      "role": "dialogue, unit 17",
+      "window": [76.0, 82.0],
+      "target_seconds": 6.0,
+      "language": "Chinese",
+      "seed": 410006,
+      "territory": "both",
+      "instruct": "三十岁出头的男性，成年男性的自然中低音，音高正常不压低，声音安静干净，几乎没有起伏，克制而疲惫，语速慢，不表演，不要气泡音。",
+      "text": "这锅汤，我找了十五年。"
+    }
+  ]
+}
