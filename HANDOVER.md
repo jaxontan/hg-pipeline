@@ -596,6 +596,15 @@ machine**, so the draft has never been opened — validity is checked at the JSO
 generator. (2) The freeze-fills are baked into the picture track, so changing them means re-running
 `win/assemble.py` and rebuilding the draft, not editing inside Jianying.
 
+**Verified 14 Nov — and one defect found by verifying.** `win\verify_delivery.py` checks the master,
+the captions, the six wavs and the draft against each other: ffprobe for the container, per-line level
+against `MEASURE.json`, caption text and timing against the spec, absolute in-repo paths in the draft,
+and the six freeze-fills by PSNR. It found the mix shipping **3 dB quiet** —
+`aformat=…channel_layouts=stereo` equal-power-spreads a mono wav, landing 1/√2 per channel.
+`pan=stereo|c0=c0|c1=c0` fixed it, the master was rebuilt, and the dialogue now matches the wavs
+exactly (−19.0 … −22.2 dBFS per line, peak −3.7 dBFS). **Run it after any re-assembly; it needs no
+Jianying.**
+
 ## Phase 6 — Characters (blocked)
 
 `work/characters/` holds three MPFB previews (`lead1_mpfb_turnaround.png`,
@@ -625,6 +634,7 @@ anything. Replacing mannequins needs no rework of the set or the rigs.
 | AgX breaks the depth ramp | flat/compressed depth until switched to Standard |
 | 8 keyframes ≈ 70 s total | measured 8.3 s each |
 | Blender runs on Windows only; Spark is GPU-only | `which blender` empty on Spark |
+| **mono→stereo `aformat` costs 3 dB** | the rebuilt master matches `MEASURE.json` per line only after switching to `pan=stereo\|c0=c0\|c1=c0` |
 | Nothing in the project was downloaded as an image | every PNG is Blender-rendered or Z-Image-generated |
 
 ## Blockers and their smallest unblocks

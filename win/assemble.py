@@ -321,8 +321,13 @@ def main() -> int:
             die(f"missing VO {w.name}")
         start = float(next(ln["window"][0] for ln in lines_spec if ln["id"] == lid))
         ms = int(round(start * 1000))
-        graph.append(f"[{n_base + k}:a]aformat=sample_fmts=fltp:sample_rates=48000:"
-                     f"channel_layouts=stereo,adelay={ms}|{ms}[a{k}]")
+        # Mono wav -> stereo with pan, NOT aformat channel_layouts=stereo: that
+        # conversion equal-power-spreads a mono source and lands 1/sqrt(2) = -3 dB
+        # in each channel, so the whole mix ships 3 dB under the measured wavs.
+        # pan copies the channel at unity and is the only reason the dialogue level
+        # in the master equals the level the voice pass signed off on.
+        graph.append(f"[{n_base + k}:a]aformat=sample_fmts=fltp:sample_rates=48000,"
+                     f"pan=stereo|c0=c0|c1=c0,adelay={ms}|{ms}[a{k}]")
         mix_in.append(f"[a{k}]")
     graph.append(f"{''.join(mix_in)}amix=inputs={len(mix_in)}:normalize=0:duration=first[aout]")
 

@@ -465,7 +465,7 @@ libass (captions) and freetype/fribidi (drawtext, the Art.27 marks) are both loa
 
 ## 7. Blockers, with the smallest thing that clears each
 
-Assembly is done, so the live blockers are the §11.5 table. History of everything cleared before it:
+Assembly is done, so the live blockers are the §11.7 table. History of everything cleared before it:
 
 | Blocker | Smallest action |
 |---|---|
@@ -526,6 +526,10 @@ python win\assemble.py --dry-run                  # check the EDL, touch nothing
 python win\assemble.py --allow-hold --out work/laotang_ep01/cut/laotang_ep01_conform.mp4   # 90 s master + report
 # --final is refused until compliance.program_number is real; do not invent one
 win\venv_jianying\Scripts\python.exe win\build_jianying_draft.py   # 3 tracks, absolute local paths
+
+# delivery check — container, mix, captions, draft, freeze-fills (needs no Jianying)
+python win\verify_delivery.py                     # ~1 min incl. frame pairs
+python win\verify_delivery.py --skip-frames       # ~1 s, text and spec only
 
 # one weight at a time, or everything declared in the manifest
 python win\spark_ssh.py --timeout 1800 'cd ~/Desktop/AIGC-Model && source env.sh >/dev/null && bin/restore.sh qwen3_tts_voicedesign_1_7b faster_whisper_small'
@@ -592,6 +596,13 @@ it** — a `cp` there once failed silently and a drift test appended to the live
 16. **Rendered speech is shorter than the shot window, and that is not a bug.** vo01 is 3.1 s inside a
     7.5 s slot. Windows in the audio map are cut lengths; silence under a slow opening is correct. If a
     line needs to be longer, change the `instruct` (slower delivery) and re-render — never time-stretch.
+17. **`aformat … channel_layouts=stereo` costs 3 dB on a mono source.** Equal-power mono→stereo lands
+    1/√2 in each channel, so a mix built with it ships 3 dB under the wavs it was measured from — which
+    is inaudible as a defect and wrong as a delivery. Use `pan=stereo|c0=c0|c1=c0`. Found on ep01 on
+    14 Nov, after the master had been signed off by every other check (§11.5).
+18. **Verify the delivery, not the build log.** `python win\verify_delivery.py` is the only thing that
+    checks the master, captions, wavs and draft against each other; the assembler's own report cannot
+    see a 3 dB error or a mis-timed caption. Run it after any re-assembly (§11.6).
 
 ---
 
@@ -635,6 +646,8 @@ load-bearing) → `work/laotang_ep01/cut/laotang_ep01_conform.mp4`:
 |---|---|
 | duration | **90.00 s** (2160 frames @ 24 fps), picture and container agree |
 | size | **40.6 MB**, 1080×1920 |
+| sha256 | **`35966a48…`** — rebuilt 14 Nov after the −3 dB audio fix (§11.5); the pre-fix master was `ffcffcb2…` |
+| audio | 48 kHz stereo AAC 192k; peak **−3.7 dBFS**, mean −29.4 dBFS (see §11.5) |
 | burned in | captions (SRT), 片头 title block, per-episode AI label |
 | provenance join | 19/19 units matched via `shot_id` + the *recorded* output filename (not the on-disk name) |
 | `final` | **false** — `compliance.program_number` is empty, so `--final` is refused by design |
@@ -690,7 +703,53 @@ and `assemble_report.json`. It is **gitignored on purpose** — a derived handof
 of truth, because tracking it would give two `assemble_report.json` files that diverge the moment the
 holds are re-timed. `cut/` is canonical; the draft references that path.
 
-### 11.5 What is left for ep01
+### 11.5 The −3 dB defect — the mix shipped quieter than the voice pass
+
+Found on 14 Nov **by verifying, not by listening**. `assemble.py` converted each mono wav with
+`aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo`. That conversion equal-power
+spreads a mono source and lands **1/√2 = −3 dB in each channel**, so every line shipped 3 dB under the
+level §6.5.1 measured: peak −6.7 dBFS, mean −32.4 dBFS.
+
+The fix is `pan=stereo|c0=c0|c1=c0` — copy, not spread. The rebuilt master is **exact** against
+`MEASURE.json` on all six lines (−19.0, −25.7, −21.0, −20.5, −20.1, −22.2 dBFS), with peak **−3.7 dBFS**,
+mean −29.4 dBFS, still 90.00 s and 40.6 MB. Master sha256 **`35966a48…`** (the old one was `ffcffcb2…`).
+The draft was rebuilt against it: same path, so nothing else in the draft changed.
+
+Two lessons, both now in the checks: a level error is inaudible as a *defect* (it sounds like a quiet
+mix), so it has to be measured against the wavs; and the mono→stereo conversion is the last place
+anyone looks.
+
+### 11.6 `win/verify_delivery.py` — what can be checked without Jianying
+
+The app is not installed, so "the JSON parses" was the only evidence the delivery was coherent. This
+closes that gap from the outside:
+
+```
+python win\verify_delivery.py                 # ~1 min, includes the frame checks
+python win\verify_delivery.py --skip-frames   # ~1 s, text and spec only
+```
+
+| Group | What it proves |
+|---|---|
+| `container.*` | ffprobe truth: 90.000 s, 1080×1920, 24 fps, 2160 frames, exactly one audio stream |
+| `mix.*` | per-line level against `MEASURE.json` (±1 dB), onset vs the spec window, no sound outside a declared window, peak headroom |
+| `srt.*` | cue starts on the window, covers the wav, text matches the spec character for character, no overlaps |
+| `draft.*` | every media path absolute and **inside the repo** (Rule 4), every file present, the video points at the canonical master, segment times and caption text equal the SRT |
+| `hold.*` | the freeze-fills are frozen: frozen frame pair ≥ 45 dB, live control pair < 45 dB |
+
+Two warnings are real and deliberately left alone:
+
+- **`vo03` is 51% sound.** The read has a **0.79 s pause after「锅」** — measured in the wav, not the
+  mix. §6.5.1's 2.29 ch/s averaged that pause in; the spoken rate is nearer 4 ch/s. Listen before
+  "fixing" it: a beat there is good acting.
+- **`vo05`'s caption runs 0.11 s past its slot**, because the slot is 1.10 s wide, `target_seconds`
+  says 0.9 s, and the wav is 1.04 s. Bookkeeping, not a delivery defect — the caption still ends
+  inside unit 13.
+
+A check earns its place by failing: the level check is what found the −3 dB, and the PSNR pairs
+separate 57–65 dB (frozen) from 12–31 dB (live) across the same six units.
+
+### 11.7 What is left for ep01
 
 | Item | Kind | Next action |
 |---|---|---|

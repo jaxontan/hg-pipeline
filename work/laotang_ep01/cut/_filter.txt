@@ -22,10 +22,10 @@
 [vsub]drawtext=fontfile='C\:/Windows/Fonts/simhei.ttf':textfile=work/laotang_ep01/cut/_ai_label.txt:fontsize=30:fontcolor=white@0.85:box=1:boxcolor=black@0.35:boxborderw=12:x=w-tw-40:y=64[vai];
 [vai]drawtext=fontfile='C\:/Windows/Fonts/simhei.ttf':textfile=work/laotang_ep01/cut/_header.txt:fontsize=34:fontcolor=white@0.95:box=1:boxcolor=black@0.45:boxborderw=16:x=(w-tw)/2:y=140:enable='lt(t,4)'[vout];
 anullsrc=r=48000:cl=stereo,atrim=duration=90.000,asetpts=PTS-STARTPTS[abase];
-[19:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,adelay=0|0[a0];
-[20:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,adelay=11000|11000[a1];
-[21:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,adelay=33000|33000[a2];
-[22:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,adelay=56000|56000[a3];
-[23:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,adelay=57900|57900[a4];
-[24:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,adelay=76000|76000[a5];
+[19:a]aformat=sample_fmts=fltp:sample_rates=48000,pan=stereo|c0=c0|c1=c0,adelay=0|0[a0];
+[20:a]aformat=sample_fmts=fltp:sample_rates=48000,pan=stereo|c0=c0|c1=c0,adelay=11000|11000[a1];
+[21:a]aformat=sample_fmts=fltp:sample_rates=48000,pan=stereo|c0=c0|c1=c0,adelay=33000|33000[a2];
+[22:a]aformat=sample_fmts=fltp:sample_rates=48000,pan=stereo|c0=c0|c1=c0,adelay=56000|56000[a3];
+[23:a]aformat=sample_fmts=fltp:sample_rates=48000,pan=stereo|c0=c0|c1=c0,adelay=57900|57900[a4];
+[24:a]aformat=sample_fmts=fltp:sample_rates=48000,pan=stereo|c0=c0|c1=c0,adelay=76000|76000[a5];
 [abase][a0][a1][a2][a3][a4][a5]amix=inputs=7:normalize=0:duration=first[aout]
