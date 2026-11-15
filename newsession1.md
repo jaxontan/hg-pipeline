@@ -1,7 +1,7 @@
 # New session 1 — start here
 
 Written 2026-11-14 at the end of the picture phase of 《老汤》ep01. Read this, then `AGENTS.md`, then
-`HANDOVER.md`. This file supersedes the "resume at Phase 3" banner in `HANDOVER.md`: **Phase 3 is done.**
+`versions.md`. This file supersedes the "resume at Phase 3" banner in `versions.md`: **Phase 3 is done.**
 
 > **Revised the same day, after a verification pass** (all 19 clip hashes, `retargets.json`, the `.blend`
 > hash, `MANIFEST.json`, the audio map and a fresh `bin/doctor.sh` re-checked — they hold). Changed:
@@ -106,7 +106,9 @@ the Spark's `VO_MANIFEST.json` and the provenance entries.
 renders too — `manju_clip_00019_.mp4` is in it with sha256 `808857c3…`, matching the file on Windows. Each
 entry carries job id, shot id, territory, prompt, model ids with SPDX + licence links + quantisation +
 sha256, seed, workflow sha256, engine versions, and the output list with its own sha256 and byte count.
-Rule 1 is satisfied. (`ep00_p2_smoke` and `ep00_p3_previz` have one entry each, same schema.)
+Rule 1 is satisfied. (`spark/provenance/ep00_*` keeps one entry each for the three handshake
+episodes, same schema, even though those render folders were deleted on 15 Nov — the record outlived
+the pixels.)
 
 **It was a single copy on the Spark until 14 Nov.** `spark/provenance/` did not exist in this repo, and
 `bin/restore.sh` rebuilt weights from `MANIFEST.json` only — so the operator's one-shot wipe would have
@@ -208,7 +210,7 @@ one-off. Re-run again after the voice pass, including after a Rule 0 failure it 
 `work/story/shotlist_laotang_ep01.md` is **finished** — 19/19 marked clip-done, render queue closed,
 cost closed. Two other docs are still stale:
 
-### `HANDOVER.md`
+### `versions.md`
 
 | Line | Now says | Should say |
 |---|---|---|
@@ -245,7 +247,7 @@ measured-subject wording.
   literally writes outside the boundary. Fix the path, not the rule.
 
 The provenance discipline is now automated (§3.1), but the *habit* still has to be written down: add
-"after any render batch: `python win\mirror_provenance.py`, then `bin/doctor.sh`" to `HANDOVER.md` when
+"after any render batch: `python win\mirror_provenance.py`, then `bin/doctor.sh`" to `versions.md` when
 you write the Round 4 section. `doctor.sh` will fail until you do, which is the point.
 
 ---
@@ -481,7 +483,7 @@ Assembly is done, so the live blockers are the §11.7 table. History of everythi
 | Kandinsky 6.0 Pro needs a ~20 KB ComfyUI core patch | **needs approval** — not on the ep01 path, do not do it for this episode |
 | Jianying not installed | **`pyJianYingDraft` is installed** (`win/venv_jianying`, 0.3.1); only the app is missing — install it pinned ≤ 5.8, then open the draft (§11.4) |
 | LoRA trainer not approved | out of scope; no unit needs a LoRA |
-| `HANDOVER.md` / `nextblender.md` stale | **cleared 14 Nov** — both rewritten, plus the `AGENTS.md` path and this file's §3 voice table and §11 (Phase 5) |
+| `versions.md` / `nextblender.md` stale | **cleared 14 Nov** — both rewritten, plus the `AGENTS.md` path and this file's §3 voice table and §11 (Phase 5) |
 
 ---
 
@@ -617,12 +619,12 @@ it** — a `cp` there once failed silently and a drift test appended to the live
 
 ## 10. First 30 minutes of the next session
 
-1. Read this file, `AGENTS.md`, and `HANDOVER.md` §"Phase 5 — Assembly". §11 of this file is the
+1. Read this file, `AGENTS.md`, and `versions.md` §"Phase 5 — Assembly". §11 of this file is the
    latest state; §1–§10 are the record of how ep01 got here.
 2. **Run the provenance check** (§3.1): `python win\mirror_provenance.py --check`, then `bin/doctor.sh`.
    The 14 Nov pin is `laotang_ep01 = f342b5a7…`, 66 entries. If anything rendered since, re-mirror before
    doing anything else — doctor will be red until you do.
-3. ~~Do §5: update `HANDOVER.md` and `nextblender.md`.~~ **Done 14 Nov** — with `AGENTS.md`, `STACK.md`
+3. ~~Do §5: update `versions.md` and `nextblender.md`.~~ **Done 14 Nov** — with `AGENTS.md`, `STACK.md`
    and this file. §5 is history; do not redo it.
 4. **Listen — but the measurement already did most of the review.** Play
    `work/laotang_ep01/vo/audition_all.wav` (all six, 17.40 s). §6.5.1–§6.5.2 cleared intelligibility

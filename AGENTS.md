@@ -89,7 +89,7 @@ manju/                 ← this repo (Windows)
 ├── AGENTS.md          ← this file: rules for every agent
 ├── STACK.md           ← what runs on which machine: tools, weights, pipeline
 ├── newsession1.md     ← live handover (state, decisions, gotchas)
-├── HANDOVER.md        ← phase-by-phase history
+├── versions.md        ← version history: phase by phase, plus the proofs
 ├── nextblender.md     ← Blender / prop / set checklist
 ├── plan.md            ← the approved plan and stack decision
 ├── pipeline2-audit.md ← verdict on the "Pipeline 2.0 / 红果" proposal (14 Nov)

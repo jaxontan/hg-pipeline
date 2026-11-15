@@ -1,4 +1,9 @@
-# HANDOVER — 火锅店 / 《老汤》 pipeline
+# versions.md — 火锅店 / 《老汤》 pipeline
+
+> **Renamed 15 Nov.** This is the file formerly called `HANDOVER.md`; the new name says what it is —
+> the versioned, phase-by-phase record. `newsession1.md` §11 is the *live* state; this file is the
+> history and the proofs behind it. Keep it: the "Do not re-derive" table and the Wan2.2 node graph
+> exist only here.
 
 **Purpose.** This file is the whole state of the project, in phases, written so that a *new*
 conversation or a different person can resume without re-deriving anything. Re-deriving costs
@@ -13,7 +18,7 @@ Written 2026-11-13. Repo root: `C:\Users\admin\Desktop\manju`.
 
 ## Copy-paste bootstrap for a new conversation
 
-> Read `HANDOVER.md` in `C:\Users\admin\Desktop\manju`, plus `work/sets/huoguo/README.md`.
+> Read `versions.md` in `C:\Users\admin\Desktop\manju`, plus `work/sets/huoguo/README.md`.
 > Phases 1–5 are DONE to a delivery master (picture, voice, conform, Jianying draft). What is left is
 > judgement, not pipeline: an ear on three voices, a sound pass, and the VACE continuation for the two
 > remaining freeze-filled units (10, 17). See `newsession1.md` §11 and §7. Do not rebuild or re-render
@@ -663,7 +668,7 @@ conversation — no other context needed.
 
 **Resuming Phase 5 (assembly) — the current one**
 
-> Read `C:\Users\admin\Desktop\manju\HANDOVER.md`, section "Phase 5 — Assembly", and
+> Read `C:\Users\admin\Desktop\manju\versions.md`, section "Phase 5 — Assembly", and
 > `C:\Users\admin\Desktop\manju\newsession1.md` §11 and §7. Phases 1–5 are done: the 90 s conform
 > master is at `work/laotang_ep01/cut/laotang_ep01_conform.mp4` and the Jianying draft at
 > `work/laotang_ep01/jianying_drafts/laotang_ep01/`. Do not re-render clips or voice. The three open
@@ -674,14 +679,14 @@ conversation — no other context needed.
 
 **Resuming Phase 3 (motion) — historical, do not re-run**
 
-> Read `C:\Users\admin\Desktop\manju\HANDOVER.md`, section "Phase 3 — Motion". This phase is
+> Read `C:\Users\admin\Desktop\manju\versions.md`, section "Phase 3 — Motion". This phase is
 > **complete** — 19 of 19 units, 18 canonical clips. Read it only to understand how a clip was made;
 > do not submit a clip. If a re-roll is genuinely needed, check `GET /jobs` first (gotcha 12) and
 > read `newsession1.md` §4.1 on the depth ramp before re-rendering any guide.
 
 **Resuming Phase 4 (voice) — historical, only the ear remains**
 
-> Read `C:\Users\admin\Desktop\manju\HANDOVER.md`, section "Phase 4 — Voice", and
+> Read `C:\Users\admin\Desktop\manju\versions.md`, section "Phase 4 — Voice", and
 > `newsession1.md` §6.5.1–§6.5.2. Weights are downloaded and six wavs are rendered and measured;
 > do not re-render unless a line sounds wrong. What is left is judgement: play
 > `work/laotang_ep01/vo/audition_all.wav` and decide on 顾衍 (75 Hz), 苏念's two registers, and
@@ -690,13 +695,13 @@ conversation — no other context needed.
 
 **Resuming Phase 6 (characters)**
 
-> Read `C:\Users\admin\Desktop\manju\HANDOVER.md`, section "Phase 6 — Characters". A LoRA trainer is
+> Read `C:\Users\admin\Desktop\manju\versions.md`, section "Phase 6 — Characters". A LoRA trainer is
 > not approved — do not install one. The mannequins in `work/sets/huoguo/huoguo_set.blend` are the
 > placeholders to replace.
 
 **Resuming Phase 7 (hygiene) only**
 
-> Read `C:\Users\admin\Desktop\manju\HANDOVER.md`, section "Phase 7 — Wipe / restore hygiene". Run
+> Read `C:\Users\admin\Desktop\manju\versions.md`, section "Phase 7 — Wipe / restore hygiene". Run
 > `bin/doctor.sh` on the Spark and report its output verbatim; fix anything non-empty rather than
 > noting it.
 

@@ -1,6 +1,6 @@
 # NEXT BLENDER — what still has to be built
 
-Written 2026-11-13. Companion to `HANDOVER.md`; read that first for machine facts, then this.
+Written 2026-11-13. Companion to `versions.md`; read that first for machine facts, then this.
 
 **Scope of this file:** only *Blender files*. Not ComfyUI graphs, not weights, not the cut.
 Every item here is a `.blend` plus a builder script, because the project rule is that a `.blend`
@@ -23,7 +23,7 @@ Blender process — different machine. Build while it renders.
 | `work/sets/huoguo/huoguo_set.blend` | 443,810 B | 火锅店 interior + street strip, **12 rigs**, 366 objects | **FROZEN 13 Nov 00:01**, sha256 `1b9274777296f1ad…` — s009 target 1.00 m, s011 45 mm at 1.38 m, s012 target z **1.25 in the saved set (canonical render uses 2.20 via `retargets.json`)**. Do not rebuild while guides are in flight. |
 | `work/sets/huoguo/huoguo_set_pre_rigs.blend` | 473,074 B | the 8-rig build, copied before that rewrite | **rollback point**, sha256 `9296cc0e…` |
 | `work/characters/lead1_mpfb_bust.blend` | 4.7 MB | 苏念 bust preview, MPFB | **test only** — no turntable, not posed, not the other three leads |
-| `work/ep00_p3_previz/s001_previz.blend` | 130 KB | the original single-shot smoke test | **superseded**, keep as record |
+| `work/ep00_p3_previz/s001_previz.blend` | 130 KB | the original single-shot smoke test | **deleted 15 Nov** with the rest of `work/ep00_*`; recover with `git show 5f87b98:work/ep00_p3_previz/s001_previz.blend` |
 | `win/blender_set_huoguo.py` | 36 KB | builder for the set above | the pattern to copy |
 | `work/sets/_template/set_template.blend` | 100,209 B | item 7 scaffold, 1 self-test rig `t000` | **done 13 Nov 22:52**, sha256 `7e8385f7…a0e7ed` |
 | `win/blender_set_template.py` | — | builder for the template above | done — copy this for a new set |
@@ -373,7 +373,7 @@ before the keyframe does.
 ## Checklist to paste into a new conversation
 
 > Read `C:\Users\admin\Desktop\manju\nextblender.md` and the "Do not re-derive" table in
-> `HANDOVER.md`. Build in the order listed at the bottom of `nextblender.md`. Every `.blend` is
+> `versions.md`. Build in the order listed at the bottom of `nextblender.md`. Every `.blend` is
 > produced by a script in `win/` — never hand-edit one. Reuse `win/blender_set_huoguo.py` as the
 > pattern for a new set: per-rig depth ramp, Standard view transform for guide passes, blurred
 > control pass, `SIGHTLINE` and `DEPTHSTAT` guards, `--ctrl-only`. Do not rebuild
@@ -395,7 +395,7 @@ Guards that survive:
 * "nothing was written" — mtime, or a hash compared **without** re-rendering.
 * cross-build equivalence — a perceptual diff, never a hash.
 
-Retired from this file and `HANDOVER.md`: every "byte-identical passes" claim.
+Retired from this file and `versions.md`: every "byte-identical passes" claim.
 
 ## s002d — copper-pot insert, variant route (13 Nov)
 
@@ -446,7 +446,7 @@ far  = near + (z_hi − z_lo) / 0.30
 
 Result: the head's own depth now occupies **~76 of 255 levels** (up from 6), on `s009` (ramp 0.583–0.903 m) and `s010` (1.042–1.378 m) alike. Both re-rolled clean on the **first** attempt.
 
-The `0.75·d` / `2.0·d` approximation that `HANDOVER.md` carried is **retired** — it was a guess from before the fix. Use the measured-subject rule instead.
+The `0.75·d` / `2.0·d` approximation that `versions.md` carried is **retired** — it was a guess from before the fix. Use the measured-subject rule instead.
 
 **Caveat — `SUBJSTAT` is mislabelled.** It prints `167` for a 0.30 span-frac, but 167 is the *complement* (gap from `z_hi` to `far`), not the subject's span. The subject spans `(z_hi − z_lo)/(far − near)·255` = 76. Quote **6 → 76** for the head's span; do not use `SUBJSTAT` as a quality gate. Fix next time the script is opened: print both, rename the existing one `FARSTAT`.
 

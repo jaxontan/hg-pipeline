@@ -66,7 +66,7 @@ confirmed from our own workflow, not from the brief.
 
 The brief treats 44 GB as a physical wall and therefore rules out any model above 11.66 GB. In this
 repo, 44 GB is `COMFY_MEMORY_MAX` in `spark/bin/up.sh`, passed to `systemd-run -p MemoryMax=` as a
-**cgroup cap on a unified-memory DGX Spark**. `HANDOVER.md` already states the position:
+**cgroup cap on a unified-memory DGX Spark**. `versions.md` already states the position:
 
 > 5B fp16 (10 GB) + umt5 fp8 (6.7 GB) fits inside the 44 G cap. A14B does not — raising
 > `COMFY_MEMORY_MAX` is a decision, not a tweak.
@@ -173,8 +173,10 @@ baseline = one `KSampler` with the control patch over all 8 steps; handoff = `KS
 
 SSIM between them **0.894** — composition, pose, wardrobe and background all hold, which is what the
 test needed to show. Looking at them side by side, B's skin is a touch cleaner and less contrasty;
-A is slightly crisper. Neither is broken. The side-by-side is
-`work/ep00_p5_handoff/_cmp_small.png` and a face crop at `_cmp_face.png`.
+A is slightly crisper. Neither is broken. The side-by-side was
+`work/ep00_p5_handoff/_cmp_small.png` with a face crop at `_cmp_face.png` — that folder was deleted on
+15 Nov, so the numbers here (SSIM 0.894) are the surviving evidence; re-derive a pair from the master
+if the comparison is ever needed again.
 
 The speed is the interesting part: the second half runs without paying for the ControlNet patch, so
 handoff is ~30 % faster *and* preserves framing. n=1 and one seed — this is a feasibility result, not

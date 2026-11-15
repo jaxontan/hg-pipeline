@@ -89,7 +89,7 @@ from the test channel. Re-test `import torchaudio.compliance.kaldi` after any to
 | Component | Version / form | Note |
 |---|---|---|
 | ComfyUI | `app/ComfyUI` @ **`b894a86`** | the engine for lanes 2–3 |
-| cgroup cap | `COMFY_MEMORY_MAX=44G` via `systemd-run -p MemoryMax=` | a **policy we wrote**, not hardware. `HANDOVER.md`: raising it is a decision, not a tweak |
+| cgroup cap | `COMFY_MEMORY_MAX=44G` via `systemd-run -p MemoryMax=` | a **policy we wrote**, not hardware. `versions.md`: raising it is a decision, not a tweak |
 | SageAttention | compiled + proved 13 Nov | `--use-sage-attention` |
 | gateway | `http://192.168.1.103:8000`, bearer `FREEFIELD_TOKEN` from `env.local` (mode 600) | the only entry point; Windows never holds the token on disk |
 | `custom_nodes/ComfyUI-VideoHelperSuite` | installed | video I/O for the clip lane |
@@ -148,7 +148,7 @@ manju/
 ├─ AGENTS.md            rules (Rule 0 boundary … Rule 6 blockers) — the binding text
 ├─ STACK.md             this file
 ├─ newsession1.md       live handover: state, decisions, gotchas, recipes
-├─ HANDOVER.md          phase-by-phase history
+├─ versions.md          version history, phase by phase (was HANDOVER.md)
 ├─ nextblender.md       the Blender/prop/set checklist
 ├─ plan.md              the original plan
 ├─ pipeline2-audit.md   what of the "Pipeline 2.0 / 红果" brief is true, false, or absent
@@ -164,8 +164,8 @@ manju/
    ├─ story/           shotlist + vo_lines spec
    ├─ laotang_ep01/    keyframes, clips, boards, vo/, edit.json (the cut)
    │  └─ cut/          the delivery master + srt + assemble_report.json
-   ├─ ep00_p2_smoke/, ep00_p3_previz/   early validation passes
-   ├─ ep00_p5_handoff/ step-handoff A/B test pair (14 Nov)
+   ├─ ep00_*/          deleted 15 Nov — early validation passes and the 14 Nov step-handoff
+   │                   A/B pair. Their provenance records survive in spark/provenance/ep00_*/
    └─ .btmp/           sanctioned scratch: Blender user config/scripts lives here, plus
                        one-off helper scripts. Nothing outside the repo is written by a build.
 ```
