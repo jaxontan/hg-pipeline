@@ -1,5 +1,6 @@
-# Freebuff project marker
+# Agent harness config (not project content)
 .freebuff/
+.kilo/
 
 # Large, reproducible binaries (re-download via win/get_ffmpeg.sh)
 win/tools/ffmpeg/
