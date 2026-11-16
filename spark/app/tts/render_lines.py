@@ -5,7 +5,7 @@ Runs on the Spark, inside the folder, with `app/venv-tts` -- never `venv/`. That
 ComfyUI's (transformers 5.22.2 / torch 2.14.1) and qwen-tts pins transformers==4.57.3, so
 installing it there would downgrade the pipeline that renders the picture.
 
-    app/venv-tts/bin/python app/tts/render_lines.py --lines work/story/vo_lines_laotang_ep01.json
+    app/venv-tts/bin/python app/tts/render_lines.py --lines work/story/vo_lines_<episode>.json
 
 Writes:
     work/<episode>/vo/<id>_<slug>.wav            16-bit PCM at the model's sample rate

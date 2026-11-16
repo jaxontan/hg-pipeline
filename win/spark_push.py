@@ -6,7 +6,7 @@ The Spark is the only other writable root, and everything lands under
 
     $env:SPARK_PASSWORD = "..."
     python win/spark_push.py spark/app/tts/measure_lines.py
-    python win/spark_push.py spark/app/tts/measure_lines.py --run "app/venv-tts/bin/python app/tts/measure_lines.py --episode laotang_ep01"
+    python win/spark_push.py spark/app/tts/measure_lines.py --run "app/venv-tts/bin/python app/tts/measure_lines.py --episode <episode>"
 
 The local path is interpreted relative to the repo root and mapped onto the same relative path
 under the remote folder, so `spark/app/tts/x.py` becomes `~/Desktop/AIGC-Model/app/tts/x.py`.

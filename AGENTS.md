@@ -85,19 +85,16 @@ substitute models, sub-sample work, or "temporarily" write outside the folder.
 ## Repo map
 
 ```
-manju/                 ← this repo (Windows)
+manju/                 ← this repo (Windows) — remote: jaxontan/hg-pipeline
 ├── AGENTS.md          ← this file: rules for every agent
-├── STACK.md           ← what runs on which machine: tools, weights, pipeline
-├── newsession1.md     ← live handover (state, decisions, gotchas)
-├── versions.md        ← version history: phase by phase, plus the proofs
-├── nextblender.md     ← Blender / prop / set checklist
-├── plan.md            ← the approved plan and stack decision
-├── pipeline2-audit.md ← verdict on the "Pipeline 2.0 / 红果" proposal (14 Nov)
 ├── win/               ← every script that runs on Windows
 │   └── tools/ffmpeg/  ← repo-local ffmpeg (%PATH% untouched; see win/get_ffmpeg.sh)
 ├── spark/             ← everything destined for ~/Desktop/AIGC-Model
 │   ├── env.sh bin/ app/ models/ work/ provenance/ archive/ logs/
-├── work/              ← sets, props, characters, keyframes, clips, voice
+├── work/
+│   ├── sets/duizhang/ ← 《对账》 blockout v01–v08 + sign-off sheets (live project)
+│   └── comfy_workflows/
+├── workbuddy-artifacts/ ← 《对账》 spec, review and quality-tier docs
 └── reference/         ← source research (the blueprint .docx) + legacy configs + licences
 ```
 

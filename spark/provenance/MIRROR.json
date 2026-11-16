@@ -19,11 +19,6 @@
       "bytes": 4993,
       "sha256": "24cf33ac98d7f650fbfda62827e94ea9c0bd07c15531d51b8b468901e89ca91e",
       "entries": 2
-    },
-    "laotang_ep01/MODEL_PROVENANCE.json": {
-      "bytes": 156805,
-      "sha256": "e6ddb99cdf7247093437f87b0af14cde8fb9252ddbd03186fc2652dab21e728f",
-      "entries": 66
     }
   }
 }

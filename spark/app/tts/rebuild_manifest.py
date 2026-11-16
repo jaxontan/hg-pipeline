@@ -11,8 +11,8 @@ wav that exists, with its real sha256, byte count and duration. The header field
 both weight hashes) are carried over from the existing manifest, because this script did not
 render anything and has no business guessing which weights produced the files.
 
-    app/venv-tts/bin/python app/tts/rebuild_manifest.py --episode laotang_ep01 --dry-run
-    app/venv-tts/bin/python app/tts/rebuild_manifest.py --episode laotang_ep01
+    app/venv-tts/bin/python app/tts/rebuild_manifest.py --episode <episode> --dry-run
+    app/venv-tts/bin/python app/tts/rebuild_manifest.py --episode <episode>
 """
 from __future__ import annotations
 

@@ -11,7 +11,7 @@ say that line, so this script puts numbers next to the judgement:
 
 Runs on the Spark under app/venv-tts (never venv/):
 
-    app/venv-tts/bin/python app/tts/measure_lines.py --episode laotang_ep01
+    app/venv-tts/bin/python app/tts/measure_lines.py --episode <episode>
 
 Writes work/<episode>/vo/MEASURE.json and prints a table. Read-only on the wavs.
 """

@@ -10,8 +10,8 @@ before anyone noticed.
 This removes the superseded ones. Order in the file is the order they were written, so the last
 entry for a given (lane, shot_id) is the one whose output currently exists.
 
-    app/venv-tts/bin/python app/tts/prune_provenance.py --episode laotang_ep01 --dry-run
-    app/venv-tts/bin/python app/tts/prune_provenance.py --episode laotang_ep01
+    app/venv-tts/bin/python app/tts/prune_provenance.py --episode <episode> --dry-run
+    app/venv-tts/bin/python app/tts/prune_provenance.py --episode <episode>
 
 Writes with indent=2 and ASCII escaping, the same as render_lines.py, so the file keeps one shape.
 """
