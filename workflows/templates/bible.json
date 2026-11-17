@@ -1,0 +1,52 @@
+{
+  "show": "demo",
+  "title": "搪瓷缸",
+  "logline": "1983年，北方县城。老陈亲手把自己的名字从厂里的留用名单上划掉——女儿追到街上要一个解释。",
+  "seed": 20261117,
+
+  "style": {
+    "look": "Photoreal cinematic film still, 1980s northern Chinese county town, low-saturation film grade, shallow depth of field, 35mm film grain, natural skin texture",
+    "video": "Photoreal, cinematic, shallow depth of field, natural subtle motion, the face stays consistent, 1983 period setting.",
+    "negative": "pc game, console game, video game, cartoon, childish, ugly, blurry, static, text, watermark, subtitles, extra fingers"
+  },
+
+  "characters": {
+    "chen": {
+      "name": "老陈",
+      "noun": "man",
+      "token": "the middle-aged man in the navy Mao suit",
+      "appearance": "A 52-year-old northern Chinese man, lean build, short greying hair combed back, weathered face, deep-set tired eyes, thin grey moustache",
+      "wardrobe": {
+        "default": "a faded navy-blue Mao suit buttoned to the collar"
+      },
+      "voice": "中年男性，五十多岁，沙哑低沉的嗓音，说话缓慢，带一点北方口音",
+      "seed": 101
+    },
+    "mei": {
+      "name": "小梅",
+      "noun": "young woman",
+      "token": "the young woman in the red knit cardigan",
+      "appearance": "A 24-year-old northern Chinese woman, slim, oval face, clear bright eyes, black hair in two low braids, no makeup",
+      "wardrobe": {
+        "default": "a hand-knitted dark-red cardigan over a white collared blouse"
+      },
+      "voice": "年轻女性，二十多岁，清亮的嗓音，语速偏快，带一点北方口音",
+      "seed": 202
+    }
+  },
+
+  "locations": {
+    "street_dusk": {
+      "name": "县城老街·黄昏",
+      "prompt": "A narrow old street in a northern Chinese county town in 1983 at dusk, wet stone paving, grey-brick single-storey houses on both sides, a state-run grocery with a hand-painted sign, one dim yellow street lamp, a parked bicycle against a wall.",
+      "short": "the same wet stone street, grey-brick houses and yellow street lamp at dusk",
+      "seed": 301
+    }
+  },
+
+  "finish": {
+    "burn_subtitles": true,
+    "loudnorm": true,
+    "label": "内容由AI生成"
+  }
+}

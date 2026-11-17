@@ -1,0 +1,75 @@
+{
+  "episode": "ep00",
+  "title": "名单",
+  "beat": "钩子：女儿当街质问 → 反转：名单是他自己划掉的 → 悬念：他转身就走，不肯说原因",
+
+  "shots": [
+    {
+      "id": "S01",
+      "note": "HOOK - open on the accusation, no establishing shot",
+      "location": "street_dusk",
+      "characters": ["mei"],
+      "size": "CU", "angle": "eye", "lens": "85mm lens", "move": "push_in",
+      "action": "{mei} stares straight past the camera, eyes wet and angry, jaw tight",
+      "light": "Cold blue dusk light with a warm street-lamp rim on her hair",
+      "dialogue": {"who": "mei", "text": "爸，厂里的名单上，为什么没有你的名字？", "emotion": "愤怒，压着哭腔", "acting": "angry, holding back tears"}
+    },
+    {
+      "id": "S02",
+      "note": "reaction - he does not answer",
+      "location": "street_dusk",
+      "characters": ["chen"],
+      "size": "MCU", "angle": "eye", "lens": "85mm lens", "move": "static",
+      "action": "{chen} holds a chipped white enamel mug in both hands, eyes lowered, saying nothing",
+      "motion": "{chen} keeps his eyes down, swallows, and slowly lowers the enamel mug a little",
+      "light": "Warm street-lamp rim light from behind",
+      "sound": "quiet evening street, a distant bicycle bell",
+      "duration": 3
+    },
+    {
+      "id": "S03",
+      "note": "insert - the prop that names the show",
+      "location": "street_dusk",
+      "characters": ["chen"],
+      "size": "INSERT", "angle": "high", "move": "push_in",
+      "action": "Extreme close view of the weathered hands of {chen} gripping a chipped white enamel mug, knuckles pale, the navy sleeve cuffs visible, no face in frame",
+      "motion": "The weathered hands tighten around the chipped white enamel mug, the knuckles turning pale",
+      "sound": "faint creak of fingers on enamel, quiet street",
+      "duration": 3
+    },
+    {
+      "id": "S04",
+      "note": "REVERSAL",
+      "location": "street_dusk",
+      "characters": ["chen"],
+      "size": "CU", "angle": "low", "lens": "85mm lens", "move": "static",
+      "action": "{chen} lifts his eyes and looks straight ahead, calm and resolved",
+      "light": "Warm street-lamp rim light from behind",
+      "dialogue": {"who": "chen", "text": "名单，是我自己划掉的。", "emotion": "平静，克制，一字一顿", "acting": "calm and restrained"}
+    },
+    {
+      "id": "S05",
+      "note": "shock beat - the classic crash zoom",
+      "key_from": "S01",
+      "location": "street_dusk",
+      "characters": ["mei"],
+      "size": "CU", "move": "crash_zoom",
+      "motion": "{mei} freezes, her eyes widen in disbelief and her lips part slightly",
+      "sound": "a sudden low thud, then silence",
+      "duration": 2
+    },
+    {
+      "id": "S06",
+      "note": "CLIFFHANGER - he walks away, the line plays over his back",
+      "location": "street_dusk",
+      "characters": ["chen"],
+      "size": "LS", "angle": "back", "move": "static",
+      "action": "{chen}, seen from behind, walks away down the middle of the empty street, the enamel mug hanging from one hand",
+      "motion": "{chen} walks slowly away from the camera down the empty wet street and does not look back",
+      "light": "The single yellow street lamp ahead of him, deep blue dusk",
+      "sound": "slow footsteps on wet stone, wind",
+      "duration": 4,
+      "dialogue": {"who": "chen", "vo": true, "text": "有些事，你还是不知道的好。", "emotion": "疲惫，低声"}
+    }
+  ]
+}

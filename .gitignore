@@ -1,33 +1,18 @@
-# Agent harness config (not project content)
-.freebuff/
-.kilo/
-
-# Large, reproducible binaries (re-download via win/get_ffmpeg.sh)
-win/tools/ffmpeg/
-
-# Scratch / derived
-win/.btmp/
-work/.btmp/
-**/__pycache__/
+# Everything heavy or machine-local stays on the DGX (see README §4).
+models/
+venv/
+venv-tts/
+ComfyUI/
+src-sageattention/
+cache/
+tmp/
+logs/
+outputs/
+__pycache__/
 *.pyc
 
-# Repo-local Python venvs (Rule 0 / Rule 3)
-win/venv*/
-.venv*/
-
-# Large media assets (canonical clips/keyframes/voice are referenced by provenance,
-# not by git; keep the EDL/spec text files)
-work/**/*.mp4
-work/**/*.png
-work/**/*.wav
-work/**/*.jpg
-work/**/*.jpeg
-work/**/*.webm
-
-# Handoff bundle: a copy of files that live canonically under cut/ and vo/.
-# Tracking both would give two sources of truth for assemble_report.json.
-work/*/delivery/
-
-# OS junk
-.DS_Store
-Thumbs.db
+# Generated media: only the demo show's reference assets and finished cut are tracked.
+assets/audio/
+assets/input/*
+!assets/input/demo/
+projects/*/*/*_parts/

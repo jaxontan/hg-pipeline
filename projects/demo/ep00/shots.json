@@ -1,0 +1,30 @@
+[
+ {
+  "id": "S01",
+  "file": "/home/tdadmin/Desktop/AIGC-PP2/outputs/demo/video_ltx_talk/ep00_S01_t2_00001_.mp4",
+  "text": "爸，厂里的名单上，为什么没有你的名字？"
+ },
+ {
+  "id": "S02",
+  "file": "/home/tdadmin/Desktop/AIGC-PP2/outputs/demo/video_ltx_i2v/ep00_S02_t1_00001_.mp4"
+ },
+ {
+  "id": "S03",
+  "file": "/home/tdadmin/Desktop/AIGC-PP2/outputs/demo/video_ltx_i2v/ep00_S03_t1_00001_.mp4"
+ },
+ {
+  "id": "S04",
+  "file": "/home/tdadmin/Desktop/AIGC-PP2/outputs/demo/video_s2v/ep00_S04_t4_00001_.mp4",
+  "text": "名单，是我自己划掉的。"
+ },
+ {
+  "id": "S05",
+  "file": "/home/tdadmin/Desktop/AIGC-PP2/outputs/demo/video_ltx_i2v/ep00_S05_t1_00001_.mp4"
+ },
+ {
+  "id": "S06",
+  "file": "/home/tdadmin/Desktop/AIGC-PP2/outputs/demo/video_ltx_i2v/ep00_S06_t1_00001_.mp4",
+  "text": "有些事，你还是不知道的好。",
+  "voice": "/home/tdadmin/Desktop/AIGC-PP2/assets/audio/demo/ep00_S06.wav"
+ }
+]

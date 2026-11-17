@@ -1,0 +1,21 @@
+#!/bin/bash
+set -uo pipefail
+ROOT="$HOME/Desktop/AIGC-PP2"
+{
+  echo ""
+  echo "---"
+  echo ""
+  echo "## $(date -u +%Y-%m-%dT%H:%M:%SZ) — how to inspect a workflow"
+  echo ""
+  echo "Added 'pipeline.cli describe [--lane NAME]': prints a lane as a numbered node list with"
+  echo "settings plus every wiring edge. Refactored export to share lane_graph()."
+  echo ""
+  echo "Confirmed the installed frontend (comfyui_frontend_package) exposes loadApiJson, so"
+  echo "workflows/*.api.json can be dragged into the UI and are rebuilt as a node graph."
+  echo "Copied all 7 api.json to the Windows desktop under AIGC-PP2/workflows/ for that purpose."
+  echo ""
+  echo "Workflow has three layers: pipeline/config.json (parameters) -> pipeline/graphs.py"
+  echo "(wiring) -> workflows/*.api.json (exported snapshot). Edit config/graphs, then re-export;"
+  echo "the .api.json files are generated artefacts and should not be hand-edited."
+} >> "$ROOT/SETUP_LOG.md"
+echo "SETUP_LOG.md: $(wc -l < "$ROOT/SETUP_LOG.md") lines"
